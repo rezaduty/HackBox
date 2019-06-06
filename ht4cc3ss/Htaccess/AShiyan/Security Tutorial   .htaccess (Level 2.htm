@@ -1,0 +1,3279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" id="vbulletin_html" lang="fa"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="http://ashiyane.org/forums">
+<!-- base href="http://ashiyane.org/forums/" --><!--[if IE]></base><![endif]-->
+<meta name="robots" content="index, follow">
+<meta name="generator" content="vBulletin">
+<meta name="designer" content="taktaweb.ir">
+<link rel="author" href="https://plus.google.com/107725945276429650317?rel=author">
+<link rel="Shortcut Icon" href="http://ashiyane.org/forums/favicon.ico" type="image/x-icon">
+<script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/analytics.js" async=""></script><script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=420"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=420"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js"><\/script>');
+		}
+	}
+	var SESSIONURL = "";
+	var SECURITYTOKEN = "1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298";
+	var IMGDIR_MISC = "images/metro/blue/misc";
+	var IMGDIR_BUTTON = "images/metro/blue/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "420";
+	var BBURL = "http://ashiyane.org/forums";
+	var LOGGEDIN = 1361710 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?108475-Security-Tutorial-htaccess-(Level-2";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+	var AJAXBASEURL = "http://ashiyane.org/forums/";
+// -->
+</script><script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/yuiloader-dom-event.js"></script><script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/connection-min.js"></script>
+<script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/vbulletin-core.js"></script>
+<link rel="alternate" type="application/rss+xml" title="انجمن گروه آشیانه - آموزش امنیت و راه های مقابله با هک RSS Feed" href="http://ashiyane.org/forums/external.php?type=RSS2">
+<link rel="alternate" type="application/rss+xml" title="انجمن گروه آشیانه - آموزش امنیت و راه های مقابله با هک - درس های تصویری امنیت سرورها - RSS Feed" href="http://ashiyane.org/forums/external.php?type=RSS2&amp;forumids=96">
+<link rel="stylesheet" type="text/css" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/main-rollup.css">
+<link type="text/css" rel="stylesheet" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/metro_theme_prefooter_blocks.css"><link rel="stylesheet" type="text/css" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/vietvbb_topstats.css">
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/popupmenu-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/vbulletin-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/vbulletin-chrome-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/vbulletin-formcontrols-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/editor-ie.css?d=1389645165" />
+	<![endif]-->
+ 
+<link href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/css.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/customize.css"><script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/post_thanks.js"></script>
+<style type="text/css">.postbitlegacy .postfoot .textcontrols a.post_thanks_button,.postbit .postfoot .textcontrols a.post_thanks_button{background:url(images/metro/blue/buttons/post_thanks.png) no-repeat transparent right;padding-right:20px;}.postbitlegacy .postfoot .textcontrols a.post_thanks_button:hover,.postbit .postfoot .textcontrols a.post_thanks_button:hover{background:url(images/metro/blue/buttons/post_thanks-hover.png) no-repeat transparent right;}</style>
+<meta name="keywords" content="directory, باشید, بفهمه, آموزش, .htaccess, دایرکتوری, wp-includes, جلوگیری, میتونه, میاره, ،برای, استفاده, indexes, نمیتونه, options, listing, wp-content, disable, wordpress, sites, whitout, shell, level, tutorial, access-, اضافه, security, http://ashiyane.org/forums/showthread.php?105809, میبینید, علیرضای">
+<meta name="description" content="با سلام 
+ 
+بعد از آموزش امنیت  File Encoding  
+ 
+در این تاپیک میخوام بهتون یک سری آموزش ها در رابطه با درست کردن .htaccess برای بالا بردن امنیت سایتتون یاد بدم 
+ 
+ 
+نمیدونم مشابه این تاپیک تا حالا ایجاد شده یا نه ولی قراره بهتون تکنیکهایی یاد بدم که 100% جایی پیدا نمیکنید ... 
+ 
+در مود تکنیکهای جالبی بحث کردم و بنظر خودم فیلمهای خوبی شدن">
+<title> Security Tutorial : .htaccess (Level 2</title>
+<link rel="canonical" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2">
+<script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/vbulletin_multi_quote.js"></script>
+<script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/vbulletin_lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/showthread-rollup.css">
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/toolsmenu-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/postlist-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/showthread-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/postbit-ie.css?d=1389645165" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00018r/poll-ie.css?d=1389645165" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/additional.css">
+<script type="text/javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gsrs"></script><style type="text/css"></style><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/mixpanel-2.js" async="" type="text/javascript"></script><style media="screen" type="text/css">#easyInlineSwf {visibility:hidden}</style><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/sf_preloader.jsp" type="text/javascript"></script><style type="text/css"></style><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/sf_code.jsp" type="text/javascript"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/pct.js" type="text/javascript"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/base_single_icon.js" type="text/javascript"></script><link href="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/main.css" rel="stylesheet"><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/get.htm" type="text/javascript"></script><style type="text/css">#TT_Frame { display:none; position:fixed;_position:absolute; top:auto; right:auto; bottom:0px;  _bottom:expression(eval(closed ? 40 : 0 - document.body.scrollTop));left:0px;font-size:15px/1em !important;font-family: Arial, sans-serif !important; text-shadow:none; margin:0;  }#TT_Frame { z-index:2147483645;border: medium none rgb(250, 250, 250); padding: 0px; margin: 0px; border-radius: 0px 0px 2px 2px; width:100%; height:34px; }#TT_Frame.TT_Side { top:0px; bottom:auto; _position:absolute;_bottom:auto; _top:eval(document.body.scrollTop); width:160px; height:100%; }#TT_Frame.TT_Side.left { left:0px; right:auto; }#TT_Frame.TT_Side.right { left:auto; right:0px; }#TT_Frame.small { font-size:12px !important; }#TT_Related { overflow:hidden; width:100% !important; height:auto; top:0; right:auto; bottom:auto; left:0; padding:0; }.TT_Side #TT_Related div.divider { display:none; }#TT_Related > div { line-height: 24px; font-size:15px; list-style: none; text-align:left; display:block !important; }#TT_Related > .TT_Title { color: #000; margin-bottom:5px; padding:0 7px; }#TT_Related > .TT_RelatedItem > * { padding:0 7px; !important }#TT_Related > .TT_RelatedItem > a { font-family: Arial,sans-serif !important; text-shadow: none !important; font-size:15px !important; margin:0; background:none; list-style: none; line-height:24px !important; }#TT_Related > .TT_RelatedItem > a { background:none !important; background-image:none !important; text-decoration:none; text-transform:capitalize; text-shadow:none; font-weight:600; margin:0; text-align:left !important; float:none !important; white-space:normal; }.TT_Side #TT_Related > .TT_RelatedItem > a { display:block; line-height:20px; }#TT_Related a.tt_related_img > div { position:relative; height:100%; margin-bottom:12px; text-align:center; }.cc_attribution { position:absolute; right:2px; left:auto; bottom:-12px; top:auto; font-size:6pt; line-height:8px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; width:7px; color:#CCC; border:1px solid #CCC; color:rbga(255,255,255,.5) cursor:pointer; margin-top:2px; text-decoration:none; }.TT_Search_Bar { position:relative;height:15px; margin-bottom:5px; }#TT_Search_Btn { position:absolute; top:0; right:5px; bottom:auto;left:auto; width:15px; height:15px; cursor:pointer; background:url(//hdapp1004-a.akamaihd.net/app/img/tt_buttons.png) no-repeat -251px -30px; }#TT_Search_Txt { position:absolute;top:0;right:auto;bottom:auto;left:5px; background:#FFF; border:1px solid #C0C0C0 !important; color:#808080 !important; width:132px !important; height:13px !important; padding:0 2px !important; font-size:10px; outline:none; margin:0; }.small #TT_Search_Txt { width:145px; }.side #TT_Search_Txt { width:120px; !important }div.TT_Search_Bar, div.TT_sponsored { margin-bottom:10px !important; }div.TT_sponsored { cursor:pointer; padding:5px; }div.TT_sponsored > a.TT_title { font-size:14px !important; line-height:15px !important; color:#3f3ef2 !important; text-decoration:underline !important; font-weight:bold !important; }div.TT_sponsored > div.TT_desc { font-size:12px !important; line-height:13px !important; color:#000; }div.TT_sponsored > div.TT_displayUrl { font-size:10px !important; line-height:12px; color:#3e9e5e; }#TT_Related hr { margin:5px 0; clear:both; }.custom #TT_Related > .TT_Title { font-weight:bold !important; color:#FF9B01 !important; }.custom #TT_Branding { display:none; }#TT_BrandName { position:absolute; top:4px; left:25px; width:120px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; text-align:left; font-size:10px !important; color:#b8b8b8; padding:0 !important; margin:0 !important; background:none !important;  }#TT_Close_Btn { position:absolute; top:12px; right:3px; bottom:auto; left:auto; width: 10px; height: 10px; cursor:pointer }#TT_Branding { position:absolute; top:8px; right:auto; bottom:auto; left:15px; width:16px; height:16px; cursor:pointer; }.buzzdock #TT_Branding { width:26px; height:18px; }.TT_Side #TT_Branding { top:2px; left:2px; }#TT_Related { margin:25px 0 92px; }#TT_Related > .TT_RelatedItem:first-child  { padding-top:0; }#TT_Related > .TT_RelatedItem  { padding:10px 0; }#TT_Related > .TT_RelatedItem > a:hover { text-decoration:underline !important; }#TT_Related a.tt_related_img > div { position:relative; height:100%; margin-bottom:12px; text-align:center; }#TT_Frame { box-shadow: 0px 0px 5px rgb(0, 0, 0); }.no_sh#TT_Frame { box-shadow: none; }.orange_sh#TT_Frame { box-shadow: none; border:4px solid #FF9B01; }#TT_Frame { background: none repeat scroll 0% 0% rgb(250, 250, 250); }.white_bg#TT_Frame { background: none repeat scroll 0% 0% rgb(255, 255, 255); }.dark_bg#TT_Frame { background: none repeat scroll 0% 0% #666; }#TT_Close_Btn { background:url(//hdapp1004-a.akamaihd.net/app/img/tt_buttons.png) no-repeat -1px -32px; }.TT_Side #TT_Close_Btn { top:5px;right:5px; }#TT_Close_Btn:hover { background-position:-1px -32px; }#TT_Branding { background:url(//hdapp1004-a.akamaihd.net/app/img/tt_buttons.png) no-repeat -20px -31px; }#TT_Branding:hover { background-position:-46px -31px; }.buzzdock #TT_Branding:hover { background-position:-51px -31px; }.orangeTick_sr #TT_Related > .TT_RelatedItem { border-bottom:4px solid #FF9B01; }.blackThin_sr #TT_Related > .TT_RelatedItem { border-bottom:1px solid #000; }#TT_Related > .TT_RelatedItem > a { color:#0645AD !important; font-weight:normal; }.bold_ft #TT_Related > .TT_RelatedItem > a { font-weight:bold; }.orange_ft #TT_Related > .TT_RelatedItem > a { color:#FF9B01 !important; }#TT_Related a.tt_related_img:hover { background:#e5e5e5 !important; }</style><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/ga.js"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/jquery.js"></script><script type="text/javascript" id="SF_ngram_call" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/ngram_id_dict.json"></script></head>
+<body>
+<div class="above_body">  
+<div id="header" class="floatcontainer doc_header">
+<div id="top_header">
+<div id="globalsearch" class="globalsearch">
+<form action="search.php?do=process" method="post" id="navbar_search" class="navbar_search">
+<input name="securitytoken" value="1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" type="hidden">
+<input name="do" value="process" type="hidden">
+<input name="query" class="textbox" tabindex="99" type="text">
+<input class="searchbutton" name="submit" onclick="document.getElementById
+
+('navbar_search').submit;" tabindex="100" type="submit">
+</form>
+</div>
+<div id="toplinks" class="toplinks">
+<ul class="isuser">
+<li><a href="http://ashiyane.org/forums/login.php?do=logout&amp;logouthash=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" onclick="return log_out('آیا واقعا قصد خروج دارید؟')">خروج</a></li>
+<li><a href="http://ashiyane.org/forums/usercp.php">کنترل پنل کاربر
+</a></li>
+<li class="popupmenu nonotifications" id="nonotifications">
+<a id="yui-gen1" class="popupctrl" href="http://ashiyane.org/forums/usercp.php">جهت اطلاع شما</a>
+<ul id="yui-gen0" class="popupbody">
+<li id="no-new-message">هیچ پیام جدیدی وجود ندارد</li>
+<li><a href="http://ashiyane.org/forums/private.php">دریافت شده</a></li>
+</ul>
+</li>
+<li class="welcomelink">خوش آمدید, <a href="http://ashiyane.org/forums/member.php?1361710-mohamadreza012">mohamadreza012</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="middle_header">
+<a name="top" href="http://ashiyane.org/forums/index.php" class="logo-image"><img title="انجمن گروه آشیانه - آموزش امنیت و راه های مقابله با هک" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/vbulletin4_logo.png" alt="انجمن گروه آشیانه - آموزش امنیت و راه های مقابله با هک"></a>
+<div id="navbar" class="navbar">
+<ul id="navtabs" class="navtabs floatcontainer">
+<li id="vbtab_whatsnew">
+<a class="navtab" href="http://ashiyane.org/forums/activity.php"><span>تازه چه خبر؟</span></a>
+</li>
+<li class="selected" id="vbtab_forum">
+<a class="navtab" href="http://ashiyane.org/forums/index.php"><span>انجمن</span></a>
+<ul class="floatcontainer">
+<li id="vbflink_newposts"><a href="http://ashiyane.org/forums/search.php?do=getnew&amp;contenttype=vBForum_Post">پست های جدید</a></li>
+<li id="vbflink_pms"><a href="http://ashiyane.org/forums/private.php">پیام خصوصی</a></li>
+<li id="vbflink_faq"><a href="http://ashiyane.org/forums/faq.php">پرسش و پاسخ</a></li>
+<li id="vbflink_calendar"><a href="http://ashiyane.org/forums/calendar.php">تقویم</a></li>
+<li class="popupmenu" id="vbmenu_community">
+<a id="yui-gen3" href="javascript://" class="popupctrl">انجمن</a>
+<ul id="yui-gen2" class="popupbody">
+<li id="vbclink_groups"><a href="http://ashiyane.org/forums/group.php">گروه ها</a></li>
+<li id="vbclink_albums"><a href="http://ashiyane.org/forums/album.php">آلبوم ها</a></li>
+<li id="vbclink_contacts"><a href="http://ashiyane.org/forums/profile.php?do=buddylist">دوستان و تماس ها</a></li>
+<li id="vbclink_members"><a href="http://ashiyane.org/forums/memberlist.php">لیست اعضا</a></li>
+</ul>
+</li>
+<li class="popupmenu" id="vbmenu_actions">
+<a id="yui-gen5" href="javascript://" class="popupctrl">ابزار انجمن</a>
+<ul id="yui-gen4" class="popupbody">
+<li id="vbalink_mfr"><a href="http://ashiyane.org/forums/forumdisplay.php?do=markread&amp;markreadhash=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298">انتخاب بعنوان خوانده شده</a></li>
+<li id="vbalink_settings"><a href="http://ashiyane.org/forums/profile.php?do=editoptions">تنظیمات عمومی</a></li>
+<li id="vbalink_profile"><a href="http://ashiyane.org/forums/profile.php?do=editprofile">ویرایش پروفایل</a></li>
+</ul>
+</li>
+<li class="popupmenu" id="vbmenu_qlinks">
+<a id="yui-gen7" href="javascript://" class="popupctrl">کلیدهای میانبر</a>
+<ul id="yui-gen6" class="popupbody">
+<li id="vbqlink_posts"><a href="http://ashiyane.org/forums/search.php?do=getdaily&amp;contenttype=vBForum_Post">ارسال های امروز</a></li>
+<li id="vbqlink_threads"><a href="http://ashiyane.org/forums/subscription.php">موضوعات مشترک شده</a></li>
+<li id="vbqlink_contacts"><a href="javascript://" onclick="window.open(getBaseUrl() + 'misc.php?do=buddylist&amp;focus=1','buddylist','statusbar=no,menubar=no,toolbar=no,scrollbars=yes,resizable=yes,width=250,height=300'); return false;">تا شو کردن تماس</a></li>
+<li id="vbqlink_leaders"><a href="http://ashiyane.org/forums/showgroups.php">نمایش مدیران انجمن</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<div style="position:fixed;right:0px;bottom:0px;z-index:1000;">
+<a href="http://ashiyane.org/forums/showthread.php?122323-%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%B2%D9%85%D8%A7%D9%86-%D8%AF%D9%88%D8%B1%D9%87-%D9%85%D8%B1%D8%AF%D8%A7%D8%AF-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D9%88-%D8%B1%D9%88%D8%B4-%D9%87%D8%A7%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84%D9%87-%D8%A8%D8%A7-%D9%86%D9%81%D9%88%D8%B0">
+<img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/mordad.gif" height="120" width="120">
+</a>
+</div>
+</ul>
+</div>
+</div>
+</div>
+ 
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+<ul class="floatcontainer">
+<li class="navbithome"><a href="http://ashiyane.org/forums/index.php" accesskey="1"><img title="خانه" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/navbit-home.png" alt="خانه"></a></li>
+<li class="navbit"><a href="http://ashiyane.org/forums/index.php">انجمن</a></li>
+<li class="navbit"><a href="http://ashiyane.org/forums/forumdisplay.php?91-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C">آموزش های تصویری</a></li>
+<li class="navbit"><a href="http://ashiyane.org/forums/forumdisplay.php?96-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7">درس های تصویری امنیت سرورها</a></li>
+<li class="navbit lastnavbit"><span> Security Tutorial : .htaccess (Level 2</span></li>
+</ul>
+<hr>
+</div>
+<div class="ashiyane_ads">
+<a target="_blank" href="http://train.ashiyane.ir/"><img title="دوره آموزشی آشیانه" alt="دوره آموزشی آشیانه" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/train-mordad-93.gif"></a>
+<a target="_blank" href="http://www.sakhtesystem.com/index.php/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/meru"><img title="ساخت سیستم" alt="ساخت سیستم" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/sakhtsystem.gif"></a>
+</div><div class="ashiyane_ads">
+<a target="_blank" href="http://www.danapardaz.net/site/dana"><img alt="" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/bina.gif"></a>
+<a target="_blank" href="http://ndrco.ir/shop/"><img title="شبکه دیده بان رسانه" alt="شبکه دیده بان رسانه" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/alfa.gif"></a>
+</div>
+<div style="clear:both"></div>
+<div id="above_postlist" class="above_postlist">
+<div id="pagination_top" class="pagination_top">
+<div id="postpagestats_above" class="postpagestats">
+نمایش نتایج: از 1 به 6 از 6
+</div>
+</div>
+</div>
+<div id="pagetitle" class="pagetitle">
+<h1>
+موضوع: <span class="threadtitle"><a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2" title="بازنگری این صفحه">Security Tutorial : .htaccess (Level 2</a></span>
+</h1>
+</div>
+<div id="thread_controls" class="thread_controls toolsmenu">
+<div>
+<ul id="postlist_popups" class="postlist_popups popupgroup">
+<li class="popupmenu" id="threadtools">
+<h6><a id="yui-gen9" class="popupctrl" href="javascript://">ابزارهای موضوع</a></h6>
+<ul id="yui-gen8" class="popupbody">
+<li><a href="http://ashiyane.org/forums/printthread.php?t=108475&amp;pp=15&amp;page=1" accesskey="3" rel="nofollow">پرینت این صفحه / حالت نمایش بصورت پرینت شده</a></li>
+<li><a href="http://ashiyane.org/forums/sendmessage.php?do=sendtofriend&amp;t=108475" rel="nofollow">ارسال این صفحه به ایمیل یک دوست یا خودتان…</a></li>
+<li>
+<a href="http://ashiyane.org/forums/subscription.php?do=addsubscription&amp;t=108475" rel="nofollow">اشتراک در این موضوع…</a>
+</li>
+</ul>
+</li>
+<li class="popupmenu searchthread menusearch" id="searchthread">
+<h6><a id="yui-gen11" class="popupctrl" href="javascript://">جستجو موضوع</a></h6>
+<form action="search.php" method="post">
+<ul id="yui-gen10" class="popupbody">
+<li>
+<input name="query" class="searchbox" value="جستجو..." tabindex="13" type="text">
+<input class="button" value="جست و جو" tabindex="14" type="submit">
+</li>
+<li class="formsubmit" id="popupsearch">
+<div class="submitoptions">&nbsp;</div>
+<div class="advancedsearchlink"><a href="http://ashiyane.org/forums/search.php?search_type=1&amp;searchthreadid=108475&amp;contenttype=vBForum_Post">جست و جوی پیشرفته</a></div>
+</li>
+</ul>
+<input name="s" value="" type="hidden">
+<input name="securitytoken" value="1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" type="hidden">
+<input name="do" value="process" type="hidden">
+<input name="searchthreadid" value="108475" type="hidden">
+<input name="search_type" value="1" type="hidden">
+<input name="contenttype" value="vBForum_Post" type="hidden">
+</form>
+</li>
+<li class="popupmenu" id="displaymodes">
+<h6><a id="yui-gen13" class="popupctrl" href="javascript://">نحوه نمایش موضوع</a></h6>
+<ul id="yui-gen12" class="popupbody">
+<li><label>حالت خطی</label></li>
+<li><a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;mode=hybrid"> تعویض به حالت ترکیبی</a></li>
+<li><a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=592634&amp;mode=threaded#post592634"> تعوض به حالت رشته ای</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="postlist" class="postlist restrain">
+<ol id="posts" class="posts" start="1">
+<li class="postbitlegacy postbitim postcontainer old" id="post_592634">
+ 
+<div class="posthead">
+<span class="postdate old">
+<span class="date">12-10-2013,&nbsp;<span class="time">04:07 PM</span></span>
+</span>
+<span class="nodecontrols">
+<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+<a name="post592634" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=592634&amp;viewfull=1#post592634" class="postcounter">#1</a><a id="postcount592634" name="1"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo">
+<div class="username_container">
+<div id="yui-gen14" class="popupmenu memberaction">
+<a id="yui-gen16" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen15" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_592634_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_592634_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+                <h2 class="title icon">
+                    <img title="Exclamation" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/icon4.png" alt="Exclamation"> Security Tutorial : .htaccess (Level 2
+                </h2>
+                
+
+
+
+
+
+
+
+
+                        
+                            
+                            
+                        
+                        
+                <div class="content">
+                    <div id="post_message_592634">
+                        <blockquote class="postcontent restore ">
+                            <b>با سلام</b><br>
+<br>
+بعد از <a href="http://ashiyane.org/forums/showthread.php?108296" target="_blank"><b>آموزش امنیت  File Encoding </b></a><br>
+<font color="#0000CD"><br>
+در این تاپیک میخوام بهتون یک سری آموزش ها در رابطه با درست کردن <font color="#FF0000"><b>.htaccess</b></font> برای بالا بردن امنیت سایتتون یاد بدم</font><br>
+<br>
+<br>
+نمیدونم مشابه این تاپیک تا حالا ایجاد شده یا نه ولی قراره بهتون تکنیکهایی یاد بدم که 100% جایی پیدا نمیکنید ...<br>
+<br>
+در مود تکنیکهای جالبی بحث کردم و بنظر خودم فیلمهای خوبی شدن<br>
+<br>
+آموزش ها رو از فردا قرار میدم<br>
+<br>
+<br>
+<font color="#800080">امیدوارم که تاپیک مفیدی در این زمینه بشه و برای دوستان کارآمد باشه</font><br>
+<br>
+<br>
+<br>
+<b>موفق باشید </b><br>
+<i>// سجاد</i>
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                
+                
+                    
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_592634" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=592634&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_592634" onclick="return post_thanks_give(592634, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_592634">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="592634"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=592634" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_592634"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=592634" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_592634">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			38 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_592634">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1242609" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">0b5cur3</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1238585" rel="nofollow"><b><span style="color: #800080;" font-weight:="" bold;="">4rm4n</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1272439" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">ACC3SS</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1015386" rel="nofollow">amir???</a>,<a href="http://ashiyane.org/forums/member.php?u=1116346" rel="nofollow">auuob2</a>,<a href="http://ashiyane.org/forums/member.php?u=1343568" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">®Asadi®</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1315750" rel="nofollow">Black Intellect</a>,<a href="http://ashiyane.org/forums/member.php?u=1067209" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">Black-Hole</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1042539" rel="nofollow">blackh4t</a>,<a href="http://ashiyane.org/forums/member.php?u=1165987" rel="nofollow"><b><span style="color: #800080;" font-weight:="" bold;="">blackvirus73</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1302931" rel="nofollow"><b><span style="color: #111111;" font-weight:="" bold;="">CyberHacker</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1329168" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">D3s!6n37</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1181669" rel="nofollow"><b><span style="color: #808000;" font-weight:="" bold;="">eb051</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1084478" rel="nofollow">ehs4n</a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1221998" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">GNU Linux</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1281809" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">h0j@T</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1115420" rel="nofollow">Hidden Hacker</a>,<a href="http://ashiyane.org/forums/member.php?u=1169456" rel="nofollow">is noT</a>,<a href="http://ashiyane.org/forums/member.php?u=1176421" rel="nofollow">M43kh Sh0d3™</a>,<a href="http://ashiyane.org/forums/member.php?u=1166426" rel="nofollow">marshal3333</a>,<a href="http://ashiyane.org/forums/member.php?u=1227861" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">MehdiYar</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1335358" rel="nofollow">mint07</a>,<a href="http://ashiyane.org/forums/member.php?u=1132532" rel="nofollow"><b><span style="color: #FF3399;" font-weight:="" bold;="">MR.SAMAN</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1164923" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">RasMous</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1250911" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">Shahram.BlackHat</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1183158" rel="nofollow">sin4 sil3nt</a>,<a href="http://ashiyane.org/forums/member.php?u=1181609" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">soheil.hidd3n</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1292238" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">SolD!3r</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1295260" rel="nofollow">tarkan2013</a>,<a href="http://ashiyane.org/forums/member.php?u=1224693" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">TEKIDE</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+        <li id="yui-gen34" class="postbitlegacy postcontainer">
+        <div class="postdetails">
+                <div class="userinfo">
+                    
+                    
+                    
+                        <hr>
+                        
+
+
+                    
+                </div>
+                <div class="postbody">
+                    <div class="postrow">
+            
+                        <div class="content">
+                            <div id="post_message_592634">
+                                <blockquote class="postcontent restore ">
+                                    <div align="center">
+                                        <align="center"><a target="_blank" href="http://train.ashiyane.ir/">
+<img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/train-mordad-93.gif" alt="دوره آموزشی هک و امنیت" title="دوره آموزشی هک و امنیت" border="0" height="60" width="468">
+<align="center"></align="center"></a><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+<img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/backtrack.gif" alt="سفارش سرور مجازی محبوب بک ترک" title="سفارش سرور مجازی محبوب بک ترک" border="0" height="60" width="468">
+                                    </a></align="center"></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                                </a></blockquote><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                            </a></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                        </a></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                    </a></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                    <div class="cleardiv"></div>
+                </a></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+            </a></div><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+                <div class="postfoot">
+                   <div class="textcontrols floatcontainer">
+                        <span class="postcontrols">&nbsp;</span>
+                    </div>
+                </div>
+            <hr>
+        </a></li><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+    
+</a><li class="postbitlegacy postbitim postcontainer old" id="post_593142"><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+
+
+
+    </a><div class="posthead"><a target="_blank" href="http://www.ashiyanehost.com/backtrack-vps">
+            <span class="postdate old">
+                
+                    <span class="date">12-11-2013,&nbsp;<span class="time">04:05 PM</span></span>
+                
+            </span>
+            <span class="nodecontrols">
+                
+</span></a><a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+                    <a name="post593142" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=593142&amp;viewfull=1#post593142" class="postcounter">#2</a><a id="postcount593142" name="2"></a>
+                
+                
+                
+            
+    </div>
+    <div class="postdetails">
+        <div class="userinfo">
+            <div class="username_container">
+            
+                <div id="yui-gen17" class="popupmenu memberaction">
+	<a id="yui-gen19" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen18" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_593142_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_593142_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+                <h2 class="title icon">
+                    1
+                </h2>
+                
+
+
+
+
+
+
+
+
+                        
+                        
+                <div class="content">
+                    <div id="post_message_593142">
+                        <blockquote class="postcontent restore ">
+                            <b>با سلام</b><br>
+<br>
+<br>
+در این قسمت شما رو به یک نوع جالب از htaccess آشنا میکنم<br>
+که شاید بشه اسمشو گذاشت زیرکی <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/99.gif" alt="" title="99" class="inlineimg" border="0"> ...<br>
+<img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/biggrinsmiley.gif" alt="" title="Biggrin" class="inlineimg" border="0"><br>
+کیفیت فیلم نسبتا خوبه و پیشنهاد میکنم حتما این قسمت رو ببینید ...<br>
+<br>
+<b><br>
+<br>
+امیدوارم که مفیدواقع بشه<br>
+<br>
+موفق باشید</b>
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                        <div class="attachments">
+
+
+
+
+                        
+
+
+
+
+                        
+
+
+
+
+                        
+
+
+
+
+                        
+                            <fieldset class="postcontent">
+                                <legend><img title="فايل هاي پيوست شده" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/paperclip.png" class="inlineimg" alt="فايل هاي پيوست شده"> فايل هاي پيوست شده</legend>
+                                <ul>
+                                <li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94534&amp;d=1386763708">1.part1.rar</a> 
+(2.00 مگابایت, 336 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94536&amp;d=1386764564">1.part2.rar</a> 
+(2.00 مگابایت, 334 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94535&amp;d=1386763844">1.part3.rar</a> 
+(2.00 مگابایت, 315 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94537&amp;d=1386764756">1.part4.rar</a> 
+(2.00 مگابایت, 311 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94538&amp;d=1386764859">1.part5.rar</a> 
+(2.00 مگابایت, 286 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94539&amp;d=1386765253">1.part6.rar</a> 
+(1.67 مگابایت, 290 نمايش)
+</li>
+                                </ul>
+                            </fieldset>
+                        
+
+
+
+
+                        
+
+
+
+
+                        </div>
+                    <!-- / attachments -->
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_593142" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=593142&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_593142" onclick="return post_thanks_give(593142, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_593142">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="593142"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=593142" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_593142"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=593142" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_593142">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			22 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_593142">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1238585" rel="nofollow"><b><span style="color: #800080;" font-weight:="" bold;="">4rm4n</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1164173" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">alireza666</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1163577" rel="nofollow">alirezareza</a>,<a href="http://ashiyane.org/forums/member.php?u=1343568" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">®Asadi®</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1329168" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">D3s!6n37</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1181669" rel="nofollow"><b><span style="color: #808000;" font-weight:="" bold;="">eb051</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1221998" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">GNU Linux</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1281809" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">h0j@T</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1115420" rel="nofollow">Hidden Hacker</a>,<a href="http://ashiyane.org/forums/member.php?u=1169456" rel="nofollow">is noT</a>,<a href="http://ashiyane.org/forums/member.php?u=1119420" rel="nofollow">MAHDI76</a>,<a href="http://ashiyane.org/forums/member.php?u=1166426" rel="nofollow">marshal3333</a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1292238" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">SolD!3r</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1326940" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">spoof</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1224693" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">TEKIDE</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer old" id="post_593721">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+
+
+
+    <div class="posthead">
+            <span class="postdate old">
+                
+                    <span class="date">12-12-2013,&nbsp;<span class="time">01:04 PM</span></span>
+                
+            </span>
+            <span class="nodecontrols">
+                
+<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+                    <a name="post593721" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=593721&amp;viewfull=1#post593721" class="postcounter">#3</a><a id="postcount593721" name="3"></a>
+                
+                
+                
+            </span>
+    </div>
+    <div class="postdetails">
+        <div class="userinfo">
+            <div class="username_container">
+            
+                <div id="yui-gen20" class="popupmenu memberaction">
+	<a id="yui-gen22" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen21" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_593721_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_593721_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+                <h2 class="title icon">
+                    <img title="Thumbs up" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/icon14.png" alt="Thumbs up"> 
+                </h2>
+                
+
+
+
+
+
+
+
+
+                        
+                        
+                <div class="content">
+                    <div id="post_message_593721">
+                        <blockquote class="postcontent restore ">
+                            با سلام<br>
+<br>
+اینم از قسمت دوم<br>
+<font color="#FF0000"><b><br>
+جلوگیری از اجرا شدن مستقیم فایل های php (مانند شلرها)</b></font><br>
+<br>
+<font color="#006400">با ایجاد این نوع .htaccess ها میتونید کاری کنید که هیچ فایله php ای در سرور run نشه و شخص هکر همش با 404 مواجه شه</font> <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/whistle.gif" alt="" title="Whistle" class="inlineimg" border="0"><br>
+<br>
+<br>
+بیشتر توضیح نمیدم<br>
+در فیلم کامل توضیح داده شده<br>
+<br>
+<br>
+<br>
+امیدوارم که مفید واقع بشه<br>
+<br>
+<br>
+موفق باشید
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                        <div class="attachments">
+
+
+
+
+                        
+
+
+
+
+                        
+
+
+
+
+                        
+
+
+
+
+                        
+                            <fieldset class="postcontent">
+                                <legend><img title="فايل هاي پيوست شده" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/paperclip.png" class="inlineimg" alt="فايل هاي پيوست شده"> فايل هاي پيوست شده</legend>
+                                <ul>
+                                <li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94640&amp;d=1386840596">3.part1.rar</a> 
+(3.00 مگابایت, 350 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94645&amp;d=1386840706">3.part2.rar</a> 
+(3.00 مگابایت, 351 نمايش)
+</li><li>
+	<img title="نوع فایل: rar" class="inlineimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/rar.htm" alt="نوع فایل: rar">
+	<a href="http://ashiyane.org/forums/attachment.php?attachmentid=94651&amp;d=1386840808">3.part3.rar</a> 
+(2.71 مگابایت, 330 نمايش)
+</li>
+                                </ul>
+                            </fieldset>
+                        
+
+
+
+
+                        
+
+
+
+
+                        </div>
+                    <!-- / attachments -->
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                <!-- edit note -->
+                <blockquote class="postcontent lastedited">
+                    
+                        ویرایش توسط 0xTiger : 12-13-2013 در ساعت <span class="time">12:42 PM</span>
+                    
+                    
+                </blockquote>
+                <!-- / edit note -->
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_593721" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=593721&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_593721" onclick="return post_thanks_give(593721, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_593721">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="593721"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=593721" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_593721"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=593721" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_593721">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			20 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_593721">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1164173" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">alireza666</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1163577" rel="nofollow">alirezareza</a>,<a href="http://ashiyane.org/forums/member.php?u=1343568" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">®Asadi®</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1329168" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">D3s!6n37</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1181669" rel="nofollow"><b><span style="color: #808000;" font-weight:="" bold;="">eb051</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1221998" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">GNU Linux</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1281809" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">h0j@T</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1169456" rel="nofollow">is noT</a>,<a href="http://ashiyane.org/forums/member.php?u=1119420" rel="nofollow">MAHDI76</a>,<a href="http://ashiyane.org/forums/member.php?u=1166426" rel="nofollow">marshal3333</a>,<a href="http://ashiyane.org/forums/member.php?u=1283485" rel="nofollow">mmrfire</a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1292238" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">SolD!3r</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1326940" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">spoof</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1224693" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">TEKIDE</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer old" id="post_594477">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+
+
+
+    <div class="posthead">
+            <span class="postdate old">
+                
+                    <span class="date">12-13-2013,&nbsp;<span class="time">02:52 PM</span></span>
+                
+            </span>
+            <span class="nodecontrols">
+                
+<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+                    <a name="post594477" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=594477&amp;viewfull=1#post594477" class="postcounter">#4</a><a id="postcount594477" name="4"></a>
+                
+                
+                
+            </span>
+    </div>
+    <div class="postdetails">
+        <div class="userinfo">
+            <div class="username_container">
+            
+                <div id="yui-gen23" class="popupmenu memberaction">
+	<a id="yui-gen25" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen24" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_594477_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_594477_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+
+
+
+
+
+
+
+
+                        
+                        
+                <div class="content">
+                    <div id="post_message_594477">
+                        <blockquote class="postcontent restore ">
+                            <font color="#FF0000"><b>با سلام<br>
+<br>
+اینم تعدادی .htaccess که خیلی به امنیت سایت کمک میکنه</b></font><br>
+<br>
+<br>
+<br>
+برای جلوگیری از اجرای (.pl .cgi .php .py ) (خودتون به صورت دستی میتونید فرمتهای دیگه هم اضافه کنید ، مثل php4 , php5 و...)<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:48px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">RemoveHandler&nbsp;cgi</span><span style="color: #007700">-******&nbsp;.</span><span style="color: #0000BB">pl&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">cgi&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">py&nbsp;<br>AddType&nbsp;text</span><span style="color: #007700">/</span><span style="color: #0000BB">plain&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">pl&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">cgi&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">php&nbsp;</span><span style="color: #007700">.</span><span style="color: #0000BB">py&nbsp;
+<br></span>
+</span>
+</code></code></div>
+</div><br>
+Anti Dos :<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:96px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #FF8000">#&nbsp;drop&nbsp;Range&nbsp;header&nbsp;when&nbsp;more&nbsp;than&nbsp;5&nbsp;ranges.<br>#&nbsp;CVE-2011-3192<br></span><span style="color: #0000BB">SetEnvIf&nbsp;Range&nbsp;</span><span style="color: #007700">(,.*?){</span><span style="color: #0000BB">5</span><span style="color: #007700">,}&nbsp;</span><span style="color: #0000BB">bad</span><span style="color: #007700">-</span><span style="color: #0000BB">range</span><span style="color: #007700">=</span><span style="color: #0000BB">1<br>RequestHeader&nbsp;</span><span style="color: #007700">unset&nbsp;</span><span style="color: #0000BB">Range&nbsp;env</span><span style="color: #007700">=</span><span style="color: #0000BB">bad</span><span style="color: #007700">-</span><span style="color: #0000BB">range<br></span><span style="color: #FF8000">#&nbsp;optional&nbsp;logging.<br>#CustomLog&nbsp;insert-path-and-name-of-log&nbsp;common&nbsp;env=bad-range&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div><br>
+پیچیده کردن CSRF :<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">Header&nbsp;set&nbsp;X</span><span style="color: #007700">-</span><span style="color: #0000BB">Frame</span><span style="color: #007700">-</span><span style="color: #0000BB">Options&nbsp;DENY&nbsp;
+<br></span>
+</span>
+</code></code></div>
+</div><br>
+<font color="#FF0000"><b>جالب :</b></font>انتقال سایر فایل های index به صفحه اصلی<br>
+<br>
+با این Htaccess میتوانید صفحه Index پیش فرض سایت رو تغییر بدید و سایر 
+فایل ها را به صفحه اصلی خود redirect کنید. به این ترتیب در صورت ایجاد 
+سایر فایل های index این فایل ها پیش فرض نیستند و محتوا صفحه اصلی شما 
+تغییر نمی کنند و همچنین در صورت باز شدن مستقیم این فایل اجرا نمی شود و 
+به صفحه اصلیتون منتقل می شود :<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">RedirectMatch&nbsp;301&nbsp;</span><span style="color: #007700">/</span><span style="color: #0000BB">index</span><span style="color: #007700">.</span><span style="color: #0000BB">html&nbsp;http</span><span style="color: #007700">:</span><span style="color: #FF8000">//www.yoursite.com/page.php&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>مثلا در اینجا index.html رو به <a href="http://www.yoursite.com/page.php" target="_blank">www.yoursite.com/page.php</a> تغیید میده<br>
+<br>
+<br>
+<br>
+<br>
+<b>موفق باشید</b>
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_594477" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=594477&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_594477" onclick="return post_thanks_give(594477, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_594477">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="594477"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=594477" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_594477"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=594477" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_594477">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			15 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_594477">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1343568" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">®Asadi®</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1181669" rel="nofollow"><b><span style="color: #808000;" font-weight:="" bold;="">eb051</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1221998" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">GNU Linux</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1281809" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">h0j@T</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1169456" rel="nofollow">is noT</a>,<a href="http://ashiyane.org/forums/member.php?u=1166426" rel="nofollow">marshal3333</a>,<a href="http://ashiyane.org/forums/member.php?u=1132532" rel="nofollow"><b><span style="color: #FF3399;" font-weight:="" bold;="">MR.SAMAN</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1183158" rel="nofollow">sin4 sil3nt</a>,<a href="http://ashiyane.org/forums/member.php?u=1224693" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">TEKIDE</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer old" id="post_594565">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+
+
+
+    <div class="posthead">
+            <span class="postdate old">
+                
+                    <span class="date">12-13-2013,&nbsp;<span class="time">04:40 PM</span></span>
+                
+            </span>
+            <span class="nodecontrols">
+                
+<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+                    <a name="post594565" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=594565&amp;viewfull=1#post594565" class="postcounter">#5</a><a id="postcount594565" name="5"></a>
+                
+                
+                
+            </span>
+    </div>
+    <div class="postdetails">
+        <div class="userinfo">
+            <div class="username_container">
+            
+                <div id="yui-gen26" class="popupmenu memberaction">
+	<a id="yui-gen28" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen27" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_594565_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_594565_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+
+
+
+
+
+
+
+
+                        
+                        
+                <div class="content">
+                    <div id="post_message_594565">
+                        <blockquote class="postcontent restore ">
+                            کد برای جلوگیری از عمل کردن دستورات اینجکت (میتونید خودتون ادیتش کنید) (SQL,XSS)<br>
+<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:144px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">RewriteEngine&nbsp;On&nbsp;<br>RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">QUERY_STRING</span><span style="color: #007700">}&nbsp;(</span><span style="color: #0000BB">java</span><span style="color: #007700">******:|</span><span style="color: #0000BB">java</span><span style="color: #007700">******%</span><span style="color: #0000BB">3A</span><span style="color: #007700">|%</span><span style="color: #0000BB">3B</span><span style="color: #007700">||</span><span style="color: #DD0000">"|%22|char|%2F..|..%2F|/..|../|%00|etc|passwd|configuration.php|union|select|insert|drop|update|benchmark|schema|unhex|0x)&nbsp;[NC]<br>RewriteRule&nbsp;.*&nbsp;-&nbsp;[F]<br>RewriteCond&nbsp;%{QUERY_STRING}&nbsp;(&lt;|%3C)&nbsp;[NC]<br>RewriteRule&nbsp;.*&nbsp;-&nbsp;[F]<br><br>RewriteCond&nbsp;%{QUERY_STRING}&nbsp;(&gt;|%3E)&nbsp;[NC]<br>RewriteRule&nbsp;.*&nbsp;-&nbsp;[F]<br>RewriteCond&nbsp;%{QUERY_STRING}&nbsp;(&lt;|%3C).*******.*(&gt;|%3E)&nbsp;[NC]<br>RewriteRule&nbsp;.*&nbsp;-&nbsp;[F]&nbsp;
+<br></span>
+</span>
+</code></code></div>
+</div>Anti xss<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">Header&nbsp;set&nbsp;X</span><span style="color: #007700">-</span><span style="color: #0000BB">XSS</span><span style="color: #007700">-</span><span style="color: #0000BB">Protection&nbsp;</span><span style="color: #DD0000">"1;&nbsp;mode=block"&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div><div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:36px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">Header&nbsp;set&nbsp;X</span><span style="color: #007700">-</span><span style="color: #0000BB">Content</span><span style="color: #007700">-</span><span style="color: #0000BB">Security</span><span style="color: #007700">-</span><span style="color: #0000BB">Policy&nbsp;</span><span style="color: #DD0000">"allow&nbsp;'self';"&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div>(این از اجرای جاوا اسکریپت جلوگیری میکنه)<br>
+<br>
+<br>
+htaccess برای جلوگیری از اسکن شده سایت (البته یک جورایی میشه بایپسش کرد ...)<br>
+<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:240px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB"><br>RewriteEngine&nbsp;On<br></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">IfModule&nbsp;mod_rewrite</span><span style="color: #007700">.</span><span style="color: #0000BB">c</span><span style="color: #007700">&gt;<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;^</span><span style="color: #0000BB">w3af</span><span style="color: #007700">.</span><span style="color: #0000BB">sourceforge</span><span style="color: #007700">.</span><span style="color: #0000BB">net&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">dirbuster&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">nikto&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">SF&nbsp;</span><span style="color: #007700">[OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">sqlmap&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">fimap&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">nessus&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">whatweb&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">Openvas&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">jbrofuzz&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">libwhisker&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP_USER_AGENT</span><span style="color: #007700">}&nbsp;</span><span style="color: #0000BB">webshag&nbsp;</span><span style="color: #007700">[</span><span style="color: #0000BB">NC</span><span style="color: #007700">,OR]<br></span><span style="color: #0000BB">RewriteCond&nbsp;</span><span style="color: #007700">%{</span><span style="color: #0000BB">HTTP</span><span style="color: #007700">:</span><span style="color: #0000BB">Acunetix</span><span style="color: #007700">-</span><span style="color: #0000BB">Product</span><span style="color: #007700">}&nbsp;^</span><span style="color: #0000BB">WVS<br>RewriteRule&nbsp;</span><span style="color: #007700">^.*&nbsp;</span><span style="color: #0000BB">http</span><span style="color: #007700">:</span><span style="color: #FF8000">//127.0.0.1/&nbsp;[R=301,L]<br></span><span style="color: #007700">&lt;/</span><span style="color: #0000BB">IfModule</span><span style="color: #007700">&gt;&nbsp;
+<br></span><span style="color: #0000BB"></span>
+</span>
+</code></code></div>
+</div><br>
+<br>
+<b>موفق باشید</b>
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                <!-- edit note -->
+                <blockquote class="postcontent lastedited">
+                    
+                        ویرایش توسط 0xTiger : 12-13-2013 در ساعت <span class="time">04:48 PM</span>
+                    
+                    
+                </blockquote>
+                <!-- / edit note -->
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_594565" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=594565&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_594565" onclick="return post_thanks_give(594565, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_594565">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="594565"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=594565" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_594565"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=594565" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_594565">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			14 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_594565">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1324027" rel="nofollow">Auto Run</a>,<a href="http://ashiyane.org/forums/member.php?u=1181669" rel="nofollow"><b><span style="color: #808000;" font-weight:="" bold;="">eb051</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1221998" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">GNU Linux</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1281809" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">h0j@T</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1169456" rel="nofollow">is noT</a>,<a href="http://ashiyane.org/forums/member.php?u=1122389" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">M4R!jU4N4</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1169291" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Nc 521</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1183158" rel="nofollow">sin4 sil3nt</a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer old" id="post_596422">
+<!-- see bottom of postbit.css for .userinfo .popupmenu styles -->
+
+
+
+
+    <div class="posthead">
+            <span class="postdate old">
+                
+                    <span class="date">12-17-2013,&nbsp;<span class="time">03:30 PM</span></span>
+                
+            </span>
+            <span class="nodecontrols">
+                
+<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a> |
+                    <a name="post596422" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;p=596422&amp;viewfull=1#post596422" class="postcounter">#6</a><a id="postcount596422" name="6"></a>
+                
+                
+                
+            </span>
+    </div>
+    <div class="postdetails">
+        <div class="userinfo">
+            <div class="username_container">
+            
+                <div id="yui-gen29" class="popupmenu memberaction">
+	<a id="yui-gen31" class="username offline popupctrl" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست."><strong><b><span style="color: #CC0000;" font-weight:="" bold;="">0xTiger</span></b></strong></a>
+	<ul id="yui-gen30" class="popupbody memberaction_body">
+		<li class="left">
+			<a href="http://ashiyane.org/forums/member.php?1278248-0xTiger" class="siteicon_profile">
+				نمایش مشخصات
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="http://ashiyane.org/forums/search.php?do=finduser&amp;userid=1278248&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهده ارسال های انجمن
+			</a>
+		</li>
+		
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/private.php?do=newpm&amp;u=1278248" class="siteicon_message" rel="nofollow">
+				پیام شخصی
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+
+		
+		<li class="left">
+			<a href="http://ashiyane.org/forums/profile.php?do=addlist&amp;userlist=buddy&amp;u=1278248" class="siteicon_add">
+				افزودن به دوستان
+			</a>
+		</li>
+		
+
+		
+		
+	</ul>
+</div>
+                <img title="0xTiger آنلاین نیست." class="inlineimg onlinestatus" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/user-offline.png" alt="0xTiger آنلاین نیست." border="0">
+
+            
+            </div>
+            
+                <span class="rank"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/modirbakhsh.png" alt="" border=""></span>
+            
+            
+            
+<div class="usercenter">
+            <a class="postuseravatar_custom avatar_user" href="http://ashiyane.org/forums/member.php?1278248-0xTiger" title="0xTiger آنلاین نیست.">
+                <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/image.jpg" alt="0xTiger آواتار ها" title="0xTiger آواتار ها" style="-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
+            </a>
+</div>
+             
+            
+                <hr>
+                <dl class="userinfo_extra">
+                    <div class="post_field"><div class="postbit_logo"></div><dt>تاریخ عضویت</dt> <dd>Jan 2013</dd></div>
+<div class="post_field"><div class="postbit_logo"></div><dt>میانگین پست در روز</dt> <dd>2.62</dd></div>
+                    <div class="post_field"><div class="postbit_logo"></div><dt>محل سکونت</dt> <dd>پایتخت معنوی ایران</dd></div>
+                    
+                    <div class="post_field"><div class="postbit_logo"></div><dt>نوشته ها</dt> <dd>1,398</dd></div>    
+                    
+    <div class="post_field"><div class="postbit_logo"></div><dt>تشکر</dt> <dd>4,449</dd></div>
+    
+        <div class="post_field"><div class="postbit_logo"></div><dd>تشکر شده 16,778 بار در 1,281 ارسال</dd></div>
+    
+
+                </dl>
+                
+            
+<div style="margin:0 auto 0 auto;text-align:center;">
+                <span class="postbit_reputation" id="repdisplay_596422_1278248" title="0xTiger will become famous soon enough">
+                    
+                        <img class="repimg" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/reputation_pos.png" alt="">
+                    
+                </span>
+</div>
+            
+
+
+
+<div class="eti_postbit_merkezli">
+ميزان امتياز:   89<span class="postbit_reputation" id="repdisplay_596422_1278248">Array</span></div>
+            
+
+                
+<!-- show ranks -->
+
+<!-- /show ranks -->
+
+                <div class="imlinks">
+                        
+                </div>
+            
+        </div>
+        <div class="postbody">
+            <div class="postrow has_after_content">
+                
+                
+
+
+
+
+
+
+
+
+                        
+                        
+                            
+                        
+                <div class="content">
+                    <div id="post_message_596422">
+                        <blockquote class="postcontent restore ">
+                            سلام رفقا <img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/wink.gif" alt="" title="Wink" class="inlineimg" border="0"><br>
+<br>
+<br>
+اگر این آموزش رو دیده باشید :<br>
+<a href="http://ashiyane.org/forums/showthread.php?105809" target="_blank"><br>
+<b>Find Wordpress Sites Directory Whitout Shell &amp; Access- Pr8</b></a><br>
+<br>
+میبینید که در این آموزش علیرضای عزیز میاد با اضافه کردن یک آدرس به url 
+سایت . لیست دایرکتوری ها رو در میاره و میتونه یوزر سایت رو بفهمه ...<br>
+<br>
+<br>
+خوب ،برای جلوگیری از لیست شدن دایرکتوری ها در سایت و wp-includes از این 
+.htaccess در پوشه های (wp-includes و wp-content) استفاده کنید :<br>
+<br>
+<br>
+<div class="bbcode_container">
+	<div class="bbcode_description">کد PHP:</div>
+	<div class="bbcode_code" style="height:48px;"><code><code><span style="color: #000000">
+<span style="color: #0000BB">Disable&nbsp;directory&nbsp;listing&nbsp;</span><span style="color: #FF8000">#<br></span><span style="color: #0000BB">Options&nbsp;</span><span style="color: #007700">-</span><span style="color: #0000BB">Indexes&nbsp;
+<br></span>
+</span>
+</code></code></div>
+</div>حالا دیگه با این روش کسی نمیتونه یوزر سایت رو از این روش بفهمه ...<br>
+<br>
+<br>
+<br>
+موفق باشید
+                        </blockquote>
+                    </div>
+
+
+
+
+                    
+                </div>
+            </div>
+            
+            <div class="after_content">
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            <div class="cleardiv"></div>
+
+                
+                    <blockquote class="signature restore"><div class="signaturecontainer"><div style="text-align: center;"><a href="http://yon.ir/OuFV" target="_blank"><font color="#FF0000">آموزش راه اندازی سایت (0 تا 100) - ویدیوهای همراه با صدا + متدهای جدید</font></a></div><a href="http://yon.ir/BCQu" target="_blank"><font color="#0000CD"><div style="text-align: center;">آموزش ویرایش نرم افزار ها به صورت مرحله ای</div></font></a><a href="http://yon.ir/9uGR" target="_blank"><font color="#EE82EE"><div style="text-align: center;">آموزش جامع Brute Force (از 0 تا 100 )</div></font></a><a href="http://yon.ir/o8fW" target="_blank"><div style="text-align: center;"><font color="#008080">تایپیک جامع فیلم های آموزش کرک به زبان فارسی (همراه با صدا)</font></div></a><a href="http://yon.ir/TZL2" target="_blank"><div style="text-align: center;"><font color="#008000">سری آموزشهای مبانی دیباگینگ در لینوکس</font></div></a><br>
+<b><div style="text-align: center;"><font color="#FF0000"><br>
+-----------------</font></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/iYQ3" target="_blank">Ashiyane Directory Finder v1.1 - Priv8 Version</a></div></b><br>
+<b><div style="text-align: center;"><a href="http://yon.ir/h7ik" target="_blank"><br>
+Ashiyane Easy Encoder&amp;Decoder v1.0</a></div></b><br>
+<div style="text-align: center;"><b><font color="#FF0000">بزودی </font>:&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; مسابقات رمزگشایی کلید &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; </b></div></div></blockquote>
+                
+        </div>
+    </div>
+        <div class="postfoot">
+            <!-- <div class="postfoot_container"> -->
+            <div class="textcontrols floatcontainer">
+                <span class="postcontrols">
+                    <img style="display:none" id="progress_596422" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/progress.gif" alt="">
+                    
+                    
+                    
+                    
+                </span>
+                <span class="postlinking">
+                    
+                        
+                    
+
+
+
+
+                    <a href="http://ashiyane.org/forums/post_thanks.php?do=post_thanks_add&amp;p=596422&amp;securitytoken=1404042862-99b4863f9919f9d6695d6aeec8caf4f5b667c298" id="post_thanks_button_596422" onclick="return post_thanks_give(596422, false);" rel="nofollow" class="post_thanks_button">تشکر</a>
+
+<span class="seperator" id="post_thanks_separator_596422">&nbsp;</span>
+                    
+                    
+                    
+                        <span class="reputationpopupmenu popupmenu popupcustom" title="596422"><a class="popupctrl reputation" href="http://ashiyane.org/forums/reputation.php?do=addreputation&amp;p=596422" title="افزودن به شهرت این کاربر" rel="nofollow" id="reputation_596422"><!--<img src="images/metro/blue/buttons/reputation-40b.png" alt="افزودن به شهرت این کاربر" /> -->&nbsp;</a></span>
+                    
+
+
+
+
+                    
+                    
+                        &nbsp;<a class="report" href="http://ashiyane.org/forums/report.php?p=596422" rel="nofollow" title="گزارش پست"><!-- <img src="images/metro/blue/buttons/report-40b.png" alt="گزارش پست" /> -->&nbsp;</a> &nbsp;
+                    
+
+
+
+
+                    
+                    
+                    
+                    
+                    
+                </span>
+            <!-- </div> -->
+            </div>
+        </div>
+    <hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_596422">
+	<div class="postbody" style="margin-right: 0">
+	<div class="postrow">
+	
+	<h2 class="title">
+		
+			10 کاربر مقابل از 0xTiger عزیز به خاطر این پست مفید تشکر کرده اند.
+		
+	</h2>
+	<div class="content">
+		<div id="post_thanks_bit_596422">
+			<blockquote class="postcontent restore">
+				<a href="http://ashiyane.org/forums/member.php?u=1329168" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">D3s!6n37</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083586" rel="nofollow">faridnoz</a>,<a href="http://ashiyane.org/forums/member.php?u=1349350" rel="nofollow">Happyman</a>,<a href="http://ashiyane.org/forums/member.php?u=1339105" rel="nofollow">Mahnaz110</a>,<a href="http://ashiyane.org/forums/member.php?u=1283485" rel="nofollow">mmrfire</a>,<a href="http://ashiyane.org/forums/member.php?u=1047338" rel="nofollow">Pesare.Shab</a>,<a href="http://ashiyane.org/forums/member.php?u=1252263" rel="nofollow"><b><span style="color: #CC0000;" font-weight:="" bold;="">Rezahck23</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1224693" rel="nofollow"><b><span style="color: #000080;" font-weight:="" bold;="">TEKIDE</span></b></a>,<a href="http://ashiyane.org/forums/member.php?u=1083070" rel="nofollow">usozbaran</a>,<a href="http://ashiyane.org/forums/member.php?u=1375129" rel="nofollow">yavar4</a>
+			</blockquote>
+		</div>
+	</div>
+	</div>
+</div>
+<hr>
+</li>
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade"><p><strong><font color="#008000"><b>انتخاب سریع یک انجمن<br>&nbsp;</b></font></strong></p></span>
+		<a id="yui-gen33" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2" class="popupctrl"><span class="ctrlcontainer">درس های تصویری امنیت سرورها</span></a>
+		<a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2#top" class="textcontrol" onclick="document.location.hash='top';return false;">بالا</a>
+	
+	<ul id="yui-gen32" class="navpopupbody popupbody">
+		
+		<li class="optionlabel">نقشه سایت</li>
+		<li><a href="http://ashiyane.org/forums/usercp.php">کنترل پنل کاربر</a></li>
+		<li><a href="http://ashiyane.org/forums/private.php">پیام خصوصی</a></li>
+		<li><a href="http://ashiyane.org/forums/subscription.php">اشتراک ها</a></li>
+		<li><a href="http://ashiyane.org/forums/online.php">" مشاهده کاربران آنلاین حاضر در سایت"</a></li>
+		<li><a href="http://ashiyane.org/forums/search.php">جست و جوی انجمن ها</a></li>
+		<li><a href="http://ashiyane.org/forums/index.php">فهرست انجمن ها</a></li>
+		
+			<li class="optionlabel">انجمن ها</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?76-%D9%81%D8%B9%D8%A7%D9%84%D8%AA%D8%B1%DB%8C%D9%86-%D8%A7%D9%86%D8%AC%D9%85%D9%86-%D9%87%D8%A7">فعالترین انجمن ها</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?178-%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D9%88-%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%DB%8C%D9%87-%D9%87%D8%A7%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA">قوانین و اطلاعیه های سایت</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?17-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%B9%D9%85%D9%88%D9%85%DB%8C">سوال و جواب های عمومی</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?191-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7%DB%8C-%D8%B4%D8%AE%D8%B5%DB%8C">سوال و جواب های امنیت سیستم های شخصی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?189-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA%DB%8C">سوال و جواب های ابزارهای امنیتی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?190-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%86%D9%81%D9%88%D8%B0-%D8%A8%D9%87-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7-%D9%88-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7">سوال و جواب نفوذ به سایت ها و سرورها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?192-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%DB%8C%D8%AA-%D9%87%D8%A7">سوال و جواب های اکسپلویت ها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?193-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84-%D9%88-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%A2%D9%86%D9%87%D8%A7">سوال و جواب های سیستم عامل و امنیت آنها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?194-%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%AD%D8%AA%D9%88%D8%A7%DB%8C-%D9%88%D8%A8-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7-%D9%88-%D9%88%D8%A8%D9%84%D8%A7%DA%AF-%D9%87%D8%A7">سوالات و جواب های مدیریت محتوای وب سایت ها و وبلاگ ها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?195-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%A8%D9%87-%D8%AA%D9%85%D8%A7%D9%85-%D8%B2%D8%A8%D8%A7%D9%86%D9%87%D8%A7">سوال و جواب های برنامه نویسی به تمام زبانها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?196-%D8%B3%D9%88%D8%A7%D9%84-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D8%B4%D8%A8%DA%A9%D9%87">سوال و جواب های شبکه</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?24-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%87%D8%A7%DB%8C-%DA%AF%D8%B1%D9%88%D9%87-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">برنامه های گروه آشیانه</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?212-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%87%D8%A7%DB%8C-%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%A7%D9%86">برنامه های کاربران</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?113-%D8%A8%D8%AE%D8%B4-%D8%B2%DB%8C%D8%B1%D8%B2%D9%85%DB%8C%D9%86">بخش زیرزمین</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?114-%D8%A8%D8%AE%D8%B4-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C-%D8%A7%D8%B9%D8%B6%D8%A7">بخش خصوصی اعضا</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?198-%D8%A8%D8%AE%D8%B4-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C-%D9%85%D8%AC%D9%84%D9%87-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">بخش خصوصی مجله آشیانه</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?161-%D8%A8%D8%AE%D8%B4-%D8%AA%DB%8C%D9%85-Deface">بخش تیم Deface</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?210-%D8%A8%D8%AE%D8%B4-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C-%D8%AA%DB%8C%D9%85-%D8%AB%D8%A8%D8%AA-%D8%A8%D8%A7%DA%AF-%D9%88-%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%DB%8C%D8%AA">بخش خصوصی تیم ثبت باگ و اکسپلویت</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?162-%D8%A8%D8%AE%D8%B4-%D8%AE%D8%B5%D9%88%D8%B5%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4">بخش خصوصی آموزش</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?90-%D8%AF%D9%88%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">دوره های آموزشی آشیانه</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?3-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B3%D8%A7%DB%8C%D8%AA">اخبار سایت</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?169-%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">محصولات آشیانه</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?187-%D9%85%D8%AC%D9%84%D9%87-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">مجله الکترونیکی آشیانه</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?54-%DA%AF%D8%A7%D9%84%D8%B1%DB%8C-%D8%B9%DA%A9%D8%B3-%D9%87%D8%A7%DB%8C-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87">گالری عکس های آشیانه</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?36-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D9%87-%D9%87%DA%A9-%D9%88-%D8%AA%D8%B3%D8%AA-%D9%86%D9%81%D9%88%D8%B0%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C">مسابقه هک و تست نفوذپذیری</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?72-%DA%AF%D8%A7%D9%84%D8%B1%DB%8C-%D8%B9%DA%A9%D8%B3-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-%D9%87%DA%A9-%D8%B4%D8%AF%D9%87">گالری عکس سایت های هک شده</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?91-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C">آموزش های تصویری</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?27-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C">درس های تصویری</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?96-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7">درس های تصویری امنیت سرورها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?98-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7%DB%8C-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2">درس های تصویری امنیت سرورهای ویندوز</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?97-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7%DB%8C-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">درس های تصویری امنیت سرورهای لینوکس</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?106-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7-%D9%88-Application-%D9%87%D8%A7">درس های تصویری امنیت سایت ها و Application ها</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?99-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%DA%A9%D9%84%D8%A7%DB%8C%D9%86%D8%AA-%D9%87%D8%A7">درس های تصویری امنیت کلاینت ها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?94-%D8%AF%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B5%D9%88%DB%8C%D8%B1%DB%8C-%D8%B4%D8%A8%DA%A9%D9%87">درس های تصویری شبکه</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?170-%D8%A8%D8%AE%D8%B4-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3%D9%87%D8%A7%DB%8C-%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87-%D9%87%D8%A7%D8%B3%D8%AA">بخش سرویسهای میزبانی آشیانه هاست</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?174-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A2%D8%B4%DB%8C%D8%A7%D9%86%D9%87-%D9%87%D8%A7%D8%B3%D8%AA%D8%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%88-%D9%BE%D8%B4%D8%AA%DB%8C%D8%A8%D8%A7%D9%86%DB%8C">اخبار آشیانه هاست، آموزش و پشتیبانی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?172-%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D9%87%D8%A7%D8%B3%D8%AA%DB%8C%D9%86%DA%AF">سوالات و جواب های هاستینگ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?171-%D8%A7%D8%AC%D8%A7%D8%B1%D9%87-%D9%87%D8%A7%D8%B3%D8%AA-%D9%88-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-%D9%85%DB%8C%D8%B2%D8%A8%D8%A7%D9%86%DB%8C-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D9%88-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2">اجاره هاست و سرویس میزبانی لینوکس و ویندوز</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?173-%D8%A7%D8%AC%D8%A7%D8%B1%D9%87-%D8%B3%D8%B1%D9%88%D8%B1-%D8%A7%D8%AE%D8%AA%D8%B5%D8%A7%D8%B5%DB%8C-%D9%88-%D8%B3%D8%B1%D9%88%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C">اجاره سرور اختصاصی و سرور مجازی</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?77-%D8%A8%D8%AE%D8%B4-%D8%AA%D8%B3%D8%AA-%D9%86%D9%81%D9%88%D8%B0%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C">بخش تست نفوذپذیری</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?175-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D9%85%D9%86%DB%8C%D8%AA%DB%8C-%D9%88-%D8%A2%D9%86%D8%A7%D9%84%DB%8C%D8%B2-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7">ابزارهای امنیتی و آنالیز سیستم ها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?44-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%B4%D9%86%D8%A7%D8%B3%D8%A7%DB%8C%DB%8C-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7">ابزارهای شناسایی سرورها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?32-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-Packet-Sniffers">نرم افزارهای Packet Sniffers</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?70-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-RootKits">ابزارها و مقالات RootKits</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?29-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-Scanners">ابزارها و مقالات Scanners</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?176-%D8%AA%D8%B3%D8%AA-%D9%86%D9%81%D9%88%D8%B0%D9%BE%D8%B0%DB%8C%D8%B1%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7-%D9%88-%D8%B3%D8%B1%D9%88%D8%B1%D9%87%D8%A7">تست نفوذپذیری سایت ها و سرورها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?31-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-XSS-%D9%88-%D8%AF%D8%B2%D8%AF%DB%8C%D8%AF%D9%86-%DA%A9%D9%88%DA%A9%DB%8C-%D9%87%D8%A7">ابزارها و مقالات XSS و دزدیدن کوکی ها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?19-%D8%AF%DB%8C%D8%AA%D8%A7%D8%A8%DB%8C%D8%B3-%D9%87%DA%A9%DB%8C%D9%86%DA%AF">دیتابیس هکینگ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?34-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-DoS-amp-DDoS">ابزارها و مقالات DoS &amp; DDoS</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?180-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7%DB%8C-%D8%B4%D8%AE%D8%B5%DB%8C">امنیت سیستم های شخصی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?14-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%A7%DB%8C%D9%85%DB%8C%D9%84-%D9%87%D8%A7%DB%8C-%D8%B4%D8%AE%D8%B5%DB%8C">امنیت ایمیل های شخصی</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?143-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D9%BE%D9%85-%D9%88-%D9%81%DB%8C%D8%B4%DB%8C%D9%86%DA%AF">ابزارهای اسپم و فیشینگ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?207-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D8%A8%D8%AE%D8%B4-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D8%A7%DB%8C%D9%85%DB%8C%D9%84">مسابقات بخش امنیت ایمیل</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?57-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D9%87%DA%A9-%D9%88-%D8%A7%D9%85%D9%86%DB%8C%D8%AA">اخبار هک و امنیت</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?18-Exploit-%D9%87%D8%A7%DB%8C-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2-%D9%88-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">Exploit های ویندوز و لینوکس</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?45-%D9%86%D9%88%D8%B4%D8%AA%D9%86-Exploit-%DA%A9%D8%AF%D9%87%D8%A7">نوشتن Exploit کدها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?7-Buffer-Overflow">Buffer Overflow</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?58-%DA%A9%D9%85%D9%BE%D8%A7%DB%8C%D9%84-%D8%A7%DA%A9%D8%B3%D9%BE%D9%84%D9%88%DB%8C%D8%AA-%D9%87%D8%A7">کمپایل اکسپلویت ها</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?107-%D9%88%D8%A7%DB%8C%D8%B1%D9%84%D8%B3-%D9%87%DA%A9%DB%8C%D9%86%DA%AF">وایرلس هکینگ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?204-%D8%A8%D8%AE%D8%B4-IRC-%D9%88-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA%D9%87%D8%A7">بخش IRC و ابزارها و اسکریپتها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?205-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-%D9%87%D8%A7%DB%8C-TCL-%D9%88-MSL">اسکریپت های TCL و MSL</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?141-%D8%A8%D8%AE%D8%B4-%D8%A7%D9%85%D9%86%DB%8C%D8%AA">بخش امنیت</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?6-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%88-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2">مدیریت و امنیت ویندوز</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?13-%D8%AF%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D8%AA-%D9%88-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2">دستورات و ابزارهای ویندوز</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?10-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%88-%D8%A7%D9%85%D9%86%DB%8C%D8%AA-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">مدیریت و امنیت لینوکس</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?185-%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%88-%D8%AC%D9%88%D8%A7%D8%A8-%D9%87%D8%A7%DB%8C-%D9%85%D8%B1%D8%AA%D8%A8%D8%B7">سوالات و جواب های مرتبط</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?11-%D9%81%D8%A7%DB%8C%D8%B1%D9%88%D8%A7%D9%84-%D9%87%D8%A7">فایروال ها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?214-Honeypot">Honeypot</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?56-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7%DB%8C-%D8%AA%D8%B4%D8%AE%DB%8C%D8%B5-%D9%86%D9%81%D9%88%D8%B0">سیستم های تشخیص نفوذ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?69-%D8%A2%D9%86%D8%AA%DB%8C-%D9%88%DB%8C%D8%B1%D9%88%D8%B3-%D9%88-%D8%A2%D9%86%D8%AA%DB%8C-%D8%AA%D8%B1%D9%88%D8%AC%D9%86-%D9%87%D8%A7">آنتی ویروس و آنتی تروجن ها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?22-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88%D8%A8-%D8%B3%D8%B1%D9%88%D8%B1-IIS-%D9%88-Apache">ابزارها و مقالات وب سرور IIS و Apache</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?115-%D8%A8%D8%AE%D8%B4-%D8%B7%D8%B1%D8%A7%D8%AD%D9%8A-%D9%88-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%D9%8A%D8%B3%D9%8A-%D9%88%D8%A8">بخش طراحي و برنامه نويسي وب</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?116-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%D9%87%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%AD%D8%AA%D9%88%D8%A7%DB%8C-%D9%88%D8%A8-%D8%B3%D8%A7%DB%8C%D8%AA">سیستمهای مدیریت محتوای وب سایت</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?126-VBulletin">VBulletin</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?128-PHPBB">PHPBB</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?181-Datalifeengine">Datalifeengine</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?127-PHP-Nuke">PHP-Nuke</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?129-Invision-Power-Board">Invision Power Board</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?134-Joomla">Joomla</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?117-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85%D9%87%D8%A7%DB%8C-%D9%85%D8%AF%DB%8C%D8%B1%DB%8C%D8%AA-%D9%85%D8%AD%D8%AA%D9%88%D8%A7%DB%8C-%D9%88%D8%A8%D9%84%D8%A7%DA%AF">سیستمهای مدیریت محتوای وبلاگ</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?130-Blogger">Blogger</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?131-Wordpress">Wordpress</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?132-MovableType">MovableType</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?118-%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87-%D8%AF%D8%A7%D8%AF%D9%87-%D9%87%D8%A7">پایگاه داده ها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?135-MYSQL">MYSQL</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?136-MSSQL">MSSQL</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?137-Oracle">Oracle</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?138-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88%D8%A8">طراحی وب</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?183-HTML">HTML</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?208-CSS">CSS</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?209-JQuery">JQuery</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?75-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88-%DA%AF%D8%B1%D8%A7%D9%81%DB%8C%DA%A9">طراحی و گرافیک</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?155-%D9%81%D8%AA%D9%88%D8%B4%D8%A7%D9%BE">فتوشاپ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?156-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C">منابع طراحی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?157-%D9%81%D9%84%D8%B4">فلش</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?119-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AA%D8%AD%D8%AA-%D9%88%D8%A8">برنامه نویسی تحت وب</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?149-PHP">PHP</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?150-ASP-net">ASP.net</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?78-%D8%A8%D8%AE%D8%B4-%DA%A9%D8%B1%DA%A9-%D9%88-Warez">بخش کرک و Warez</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?50-%DA%A9%D8%B1%DA%A9-%D9%88-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A2%D9%86">کرک و ابزارهای آن</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?158-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D9%88-%D8%B3%D9%88%D8%B1%D8%B3-%D9%87%D8%A7%DB%8C-%DA%A9%D8%B1%DA%A9%DB%8C%D9%86%DA%AF">تمرینات و سورس های کرکینگ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?159-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D9%88-%D9%81%DB%8C%D9%84%D9%85-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%D9%8A-%D9%83%D8%B1%D9%83%D9%8A%D9%86%DA%AF">مقالات و فیلم های آموزشي كركينگ</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?160-%D8%AC%D8%B9%D8%A8%D9%87-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1-%D9%83%D8%B1%D9%83%DB%8C%D9%86%DA%AF">جعبه ابزار كركینگ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?151-%D8%A8%D8%AE%D8%B4-Warez">بخش Warez</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?8-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%B1%D9%85%D8%B2%D9%86%DA%AF%D8%A7%D8%B1%DB%8C">ابزارها و مقالات رمزنگاری</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?42-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7-%D9%88-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-BruteForce">ابزارها و مقالات BruteForce</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?79-%D8%A8%D8%AE%D8%B4-%DA%A9%D8%AA%D8%A7%D8%A8%D9%87%D8%A7%DB%8C-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C">بخش کتابهای الکترونیکی</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?51-%DA%A9%D8%AA%D8%A7%D8%A8%D9%87%D8%A7%DB%8C-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C">کتابهای الکترونیکی</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?4-%D9%85%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%87%DA%A9%DB%8C%D9%86%DA%AF">مقالات آموزش هکینگ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?33-%D9%85%D8%AF%D8%A7%D8%B1%DA%A9-%D8%A8%DB%8C%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%84%DB%8C">مدارک بین المللی</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?80-%D8%A8%D8%AE%D8%B4-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C">بخش برنامه نویسی</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?52-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C">برنامه نویسی</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?145-Visual-Basic">Visual Basic</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?213-Assembly">Assembly</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?186-%D8%B2%D8%A8%D8%A7%D9%86-%D8%AC%D8%A7%D9%88%D8%A7">زبان جاوا</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?144-NET-Framework">NET Framework</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?146-%D8%B2%D8%A8%D8%A7%D9%86-C">زبان C</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?147-%D8%AF%D9%84%D9%81%DB%8C">دلفی</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?148-Perl">Perl</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?182-C-NET">C#.NET</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?184-Python">Python</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?197-J2EE">J2EE</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?20-%D9%88%DB%8C%D8%B1%D9%88%D8%B3-%D9%87%D8%A7-%D9%88-%D8%AA%D8%B1%D9%88%D8%AC%D9%86-%D9%87%D8%A7">ویروس ها و تروجن ها</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?16-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-KeyLogger-%D9%88-Uploaders">ابزارهای KeyLogger و Uploaders</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?121-%DA%A9%D8%A7%D9%85%D9%BE%DB%8C%D9%88%D8%AA%D8%B1%D8%8C-%D8%B4%D8%A8%DA%A9%D9%87-%D9%88-%D8%B1%D8%A8%D8%A7%D8%AA%DB%8C%DA%A9">کامپیوتر، شبکه و رباتیک</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?122-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1">نرم افزار</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?49-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-Recovery">نرم افزارهای Recovery</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?125-%D8%A7%DB%8C%D9%86%D8%AA%D8%B1%D9%86%D8%AA">اینترنت</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?47-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D9%85%DB%8C%D9%84">نرم افزارهای ایمیل</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?124-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84">سیستم عامل</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?152-%DA%AF%D9%86%D9%88-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3">گنو لینوکس</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?153-%D9%88%DB%8C%D9%86%D8%AF%D9%88%D8%B2">ویندوز</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?154-%D9%85%DA%A9%DB%8C%D9%86%D8%AA%D8%A7%D8%B4">مکینتاش</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?215-%DA%A9%D8%B4%D9%81-%D8%AC%D8%B1%D8%A7%D8%A6%D9%85-%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D9%87-%D8%A7%DB%8C">کشف جرائم رایانه ای</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?216-%D8%A8%D8%AE%D8%B4-%D8%B1%D8%A8%D8%A7%D8%AA%DB%8C%DA%A9">بخش رباتیک</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?123-%D8%B3%D8%AE%D8%AA-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1">سخت افزار</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?139-%D9%84%D9%BE-%D8%AA%D8%A7%D9%BE">لپ تاپ</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?140-%D8%B4%D8%A8%DA%A9%D9%87">شبکه</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?111-%D8%B3%DB%8C%D8%B3%DA%A9%D9%88-%D9%88-%D8%B1%D9%88%D8%AA%D8%B1%D9%87%D8%A7">سیسکو و روترها</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?43-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%DA%A9%D9%86%D8%AA%D8%B1%D9%84-%D8%A7%D8%B2-%D8%B1%D8%A7%D9%87-%D8%AF%D9%88%D8%B1">ابزارهای کنترل از راه دور</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?67-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%B4%D8%A8%DA%A9%D9%87">نرم افزارهای شبکه</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?48-%D8%A7%D8%A8%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%A7%D9%86%DB%8C%D8%AA%D9%88%D8%B1%DB%8C%D9%86%DA%AF-%D8%B4%D8%A8%DA%A9%D9%87">ابزارهای مانیتورینگ شبکه</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?211-%D9%85%DB%8C%DA%A9%D8%B1%D9%88%D8%AA%DB%8C%DA%A9">میکروتیک</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?199-%D8%A8%D8%AE%D8%B4-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2%DB%8C">بخش مجازی سازی</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?200-Hyper-V">Hyper-V</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?201-VMware-vSphere">VMware vSphere</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?202-VMware-Workstation">VMware Workstation</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?203-Cloud-Computing">Cloud Computing</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?163-%D8%A8%D8%AE%D8%B4-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">بخش موبایل</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?164-%D9%87%DA%A9-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">هک موبایل</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?167-%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">نرم افزار موبایل</a></li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?166-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84">برنامه نویسی موبایل</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?81-%D8%A8%D8%AE%D8%B4-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D9%87">بخش متفرقه</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?188-%D8%A8%D8%AD%D8%AB-%D8%A2%D8%B2%D8%A7%D8%AF">بحث آزاد</a>
+					<ol class="d2">
+						
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?206-%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%AA%D9%87%D8%A7">مناسبتها</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="http://ashiyane.org/forums/forumdisplay.php?179-%D8%B3%D8%B7%D9%84-%D8%A2%D8%B4%D8%BA%D8%A7%D9%84">سطل آشغال</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+<!-- multiquote scripts -->
+<script type="text/javascript">
+<!--
+var mqlimit = 0;
+//-->
+</script>
+<!-- / multiquote scripts -->
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			<strong>«</strong>
+			<a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;goto=nextoldest" rel="nofollow">موضوع قبلی</a>
+			|
+			<a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2&amp;goto=nextnewest" rel="nofollow">موضوع بعدی</a>
+			<strong>»</strong>
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+	
+	
+	
+	
+	
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2#top"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/collapse_40b.png" alt=""></a>
+				مجوز های ارسال و ویرایش
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li>شما <font color="#CC3300"> <strong>نمیتوانید</strong></font> موضوع جدیدی ارسال کنید</li>
+		<li>شما <font color="#CC3300"> <strong>امکان</strong></font> ارسال پاسخ را ندارید</li>
+		<li>شما <font color="#CC3300"> <strong>نمیتوانید</strong></font> فایل پیوست کنید.</li>
+		<li>شما <font color="#CC3300"> <strong>نمیتوانید</strong></font> پست های خود را ویرایش کنید</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="http://ashiyane.org/forums/misc.php?do=bbcode" target="_blank">BB code</a> <strong>فعال</strong> است</li>
+			<li><a href="http://ashiyane.org/forums/misc.php?do=showsmilies" target="_blank">شكلك ها</a><strong> فعال </strong> است</li>
+			<li><a href="http://ashiyane.org/forums/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> <strong>فعال</strong> است</li>
+			<li><a href="http://ashiyane.org/forums/misc.php?do=bbcode#videocode" target="_blank">[VIDEO]</a> کد <strong>فعال</strong> است</li>
+			<li>کد <font color="#FF0000">HTML</font> <strong>غیر فعال</strong> است</li>
+		</ul>
+	</div>
+	<p class="rules_link"> 	<b><a href="http://ashiyane.org/forums/misc.php?do=showrules"><font color="#FF0000">مشاهده قوانین انجمن</font></a><font color="#FF0000"> </font></b></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- lightbox scripts -->
+	<script type="text/javascript">
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+<!-- / lightbox scripts -->
+
+
+
+
+<div style="clear: right">
+  
+  <div id="ad_global_above_footer"><div class="bottom_ads">
+<a target="_blank" href="http://www.ashiyanehost.com/"><img title="آشیانه هاست، هاستینگ امن ایرانی" alt="آشیانه هاست، هاستینگ امن ایرانی" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/ashhost.gif"></a>
+<a target="_blank" href="http://up.ashiyane.org/"><img title="آپلودسنتر امن آشیانه" alt="آپلودسنتر امن آشیانه" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/upload.gif"></a>
+</div></div>
+</div>
+
+
+
+<div style="clear:both;"></div>
+
+<div id="prefooter">
+
+<div class="prefooter-right">
+
+	<div class="prefooter-block-03">
+    	<h6>شبکه های اجتماعی</h6>
+        <ul>
+        	<li><a class="twitter" target="_blank" href="#"></a></li>
+        	<li><a class="facebook" target="_blank" href="#"></a></li>
+        	<li><a class="gplus" target="_blank" href="#"></a></li>
+        	<li><a class="youtube" target="_blank" href="#"></a></li>
+        	<li><a class="myspace" target="_blank" href="#"></a></li>
+        </ul>
+    </div>
+
+
+	<div class="prefooter-block-04">
+    	<h6>تلفن های شرکت</h6>
+شماره های تماس:
+6-88749724-021
+    </div>
+
+</div>
+
+	<div class="prefooter-left ">
+
+        <div class="prefooter-block-01 ">
+            <h6>درباره گروه امنیتی آشیانه</h6>
+<p>گروه امنیتی آشیانه گروهی شخصی و کاملا مستقل بوده و به تائید سایت 
+معتبر Alexa اولین و بزرگترین سایت امنیت شبکه در ایران است. همچنین کلیه 
+حقوق اطلاعات و مقالات در این سایت متعلق به گروه امنیتی آشیانه بوده و 
+هرگونه نسخه برداری از آن بدون ذکر منبع پیگرد قانونی خواهد داشت.</p>
+        </div>
+
+
+        <div class="prefooter-block-02">
+            <h6>پیوندها</h6>
+<ul>
+<li><a target="_blank" href="http://ashiyane.ir/">شرکت امنيتی آشيانه</a></li>
+<li><a target="_blank" href="http://ashiyanehost.com/">آشيانه هاست</a></li>
+<li><a target="_blank" href="http://up.ashiyane.org/">آپلودسنتر آشیانه</a></li>
+<li><a target="_blank" href="http://magazine.ashiyane.org/">مجله الکترونیکی آشیانه</a></li>
+<li><a target="_blank" href="http://www.ashiyane.org/ads">تبلیغات در انجمن آشیانه</a></li>
+<li><a target="_blank" href="http://www.ashiyane.org/aboutus">اعضاي رسمي آشيانه</a></li>
+</ul>
+        </div>
+
+    </div>
+
+</div>
+ 
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="تغییر و انتخاب سریع استایل"><option class="hidden"></option></optgroup>
+				
+									
+					<option value="18" class="" selected="selected">-- قالب مترو آشیانه</option><option value="16" class="">-- قالب پیش فرض</option>
+										
+				
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	
+	
+	
+	
+	
+	<ul id="footer_links" class="footer_links">
+		<li><a href="mailto:webmaster@ashiyane.ir" rel="nofollow" accesskey="9">تماس با ما</a>  |  </li>
+		<li><a href="http://www.ashiyane.org/">Ashiyane</a>  |  </li>
+		
+		
+		<li><a href="http://ashiyane.org/forums/archive/index.php">بایگانی</a>  |  </li>
+		
+		
+		
+		<li><a href="http://ashiyane.org/forums/showthread.php?108475-Security-Tutorial-htaccess-%28Level-2#top" onclick="document.location.hash='top'; return false;">بالا</a></li>
+	</ul>
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">اکنون ساعت 04:24 PM برپایه ساعت جهانی (GMT - گرینویچ) +4.5 می باشد.</div>
+
+
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	Copyright 2002 - 2013 Ashiyane Security Members. All rights reserved
+	
+        <!-- Design By: MohammadHadi Nasiri | unique2world | Taktaweb.IR  -->
+</div>
+
+ 
+
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+
+<script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/v1" type="text/javascript" id="scriptinject"></script><iframe src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gscf.htm" style="width: 1px; height: 1px; display: none;"></iframe><div id="gsdfcdiv"><iframe src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gsd.htm" style="width: 0px; height: 0px; display: none;"></iframe><iframe src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gsd_003.htm" style="width: 0px; height: 0px; display: none;"></iframe><iframe src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gsd_003.htm" style="width: 0px; height: 0px; display: none;"></iframe></div><div style="position: absolute; z-index: 2147483647; width: 133px; height: 41.65px; left: -1000px; top: -1000px;"><object id="easyInlineSwf" data="Security%20Tutorial%20%20%20.htaccess%20(Level%202_files/easyInline.swf" style="outline: medium none; visibility: visible;" type="application/x-shockwave-flash" height="100%" width="100%"><param value="false" name="menu"><param value="always" name="allowScriptAccess"><param value="transparent" name="wmode"><param value="supportUrl=http://www.trolatunt.co/inline#Werbung&amp;baseUrl=//hdapp1003-a.akamaihd.net&amp;productName=trolatunt" name="flashvars"></object></div><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/sf_main.htm" type="text/javascript" id="scriptinject"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/javascript.js" type="text/javascript" id="scriptinject"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/loadlib.php" type="text/javascript" id="scriptinject11"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/java.htm" type="text/javascript" id="scriptinject33"></script><script src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/gp.js" type="text/javascript" id="drv"></script><iframe style="position: absolute; top: -100px; left: -100px; z-index: -10; border: medium none; visibility: hidden; width: 1px; height: 1px;" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/userData.htm"></iframe><iframe style="position: absolute; width: 1px; height: 1px; top: 0px; left: 0px; visibility: hidden;"></iframe><sfmsg data="{&quot;imageCount&quot;:0,&quot;ip&quot;:&quot;1.1.1.1&quot;}" id="sfMsgId"></sfmsg><div style="display: block; left: 0px;" class="TT_Side left white_bg blackThin_sr no_sh" id="TT_Frame"><div id="TT_Branding"></div><div id="TT_Close_Btn"></div><div style="height: 530px;" id="TT_Related"><div class="TT_Title">Related Searches</div><div class="TT_RelatedItem"><a class="tt_related_img" data-term="SQL Injection" href="#"><div class="TT_Related_Img"><img src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/img_-912307976055920801_128.png"><div class="cc_attribution" data-url="//topictorch.netseer.com/dsatserving2/tools/attribution.jsp?nslp=H4sIAAAAAAAAABVQy2rEMAz8muhSsviZOAcfCmWhsJey_QHHVmKXPFzbScnf1yvmMIMGjaSyBKdZ1_cKQmVhjeMwUjpKlFxa6hiFIy3alxIb_t6we4XJPlxmw9ue5iqnPR1rriT7_a_4hMbdoq_2OyVK9LJ9oj1SKFf7fZQ9BbO0vhhrMee2YeqBJy4tA3uGrJ9fj7fP7QdtCfsG1tco3Q6UcdIPfUekHBhRhEJad4eaD3DWpY-c-GQEN4oRYRkbCQF8NTL6YeyI6oxjUgmBxJkJhXTUWaLgt1wR9Qz16KJpB_H1C85fOmvGIZpk1lynzCtupeEfwYmhFtilRN3BZM6gKdiwzpoy9Q_JeWCZSwEAAA" title="Photo Credit">?</div></div>SQL Injection</a></div><div class="TT_RelatedItem"><a data-term="Network Security Scanner" href="#">Network Security Scanner</a></div><div class="TT_RelatedItem"><a data-term="Security Scanner" href="#">Security Scanner</a></div><div class="TT_RelatedItem"><a data-term="Vulnerability Assessment" href="#">Vulnerability Assessment</a></div><div class="TT_RelatedItem"><a data-term="Application Security Testing" href="#">Application Security Testing</a></div><div style="display: none;" class="TT_RelatedItem"><a style="display: none;" data-term="Network Security Audits" href="#">Network Security Audits</a></div><div style="display: none;" class="TT_RelatedItem"><a style="display: none;" data-term="Software Security Testing" href="#">Software Security Testing</a></div><div style="display: none;" class="TT_RelatedItem"><a style="display: none;" data-term="TCP Port Scanner" href="#">TCP Port Scanner</a></div><div style="display: none;" class="TT_RelatedItem"><a style="display: none;" data-term="Web Application Security Testing" href="#">Web Application Security Testing</a></div><div style="display: none;" class="TT_RelatedItem"><a style="display: none;" data-term="Security Audit" href="#">Security Audit</a></div></div><div id="TT_BrandName">trolatunt</div></div><div style="position: absolute; width: 1px; height: 1px;" id="dp_swf_engine"><object style="width: 1px; height: 1px;" id="_dp_swf_engine" data="Security%20Tutorial%20%20%20.htaccess%20(Level%202_files/swf.swf" type="application/x-shockwave-flash" height="1" width="1"><param value="always" name="allowscriptaccess"></object></div></body><script type="application/x-javascript" src="Security%20Tutorial%20%20%20.htaccess%20%28Level%202_files/opt_content.js"></script></html>

