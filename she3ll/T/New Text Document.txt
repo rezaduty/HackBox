@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `news` (
+  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` text NOT NULL,
+  `content1` text NOT NULL,
+  `content2` text NOT NULL,
+  `date` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+INSERT INTO `news` (`ID`, `title`, `content1`, `content2`, `date`) VALUES
+(1, '???? ??? ???', 'Content 1 here ...<br />...<b>AAA</b>', 'Content 2 over ...<br />...<b>BBB</b>', 1247275535),
+(2, 'the seCond tiTle', 'the contents of this news goes here,<br />of course this is the first content', 'the other half of contents is here<br />\r\nyou can give more information here and less information there', 1247275535),
+(3, 'خبر شماره 3', 'توضیحات کوتاهی در مورد خبر.', 'شرح کامل خبر در ای�??* قسمت قرار خواهد گرفت، که ای�??* قسمت بعد از رفت�??* به خبر مربوطه قابل مشاهده می باشد.', 1247476259);
