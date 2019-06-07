@@ -1,0 +1,7 @@
+open port 
+service back port open
+listen in r4-
+check the online port 
+bulid tr0j
+run the set dns in ip example:duc-.bat
+run tr0j
