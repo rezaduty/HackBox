@@ -1,0 +1,102 @@
+
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://pass.txt
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:21:36]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://pass.txt
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:24:20]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://pass.txt
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:27:43]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://www.brooz.tv3.ir/administrator/
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:29:07]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://www.brooz.tv3.ir/administrator/
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:29:46]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Proxy Not Given
+[+] BruteForcing:http://www.brooz.tv3.ir/administrator/
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:31:13]
+
+|----------------------------------------------|
+| rsauron[@]gmail[dot]com                v1.0  |
+|   7/2008      joomlabrute.py                 |
+|    - Joomla Administrator Panel BruteForcer  |
+| Usage: joomlabrute.py [options]              |
+|                       -h help   darkc0de.com |
+|----------------------------------------------|
+[+] Building Proxy List...
+	Proxy:localhost- Success[+] Proxy List Complete
+[+] BruteForcing:http://www.brooz.tv3.ir/administrator/
+[+] Username:admin
+[+] Words Loaded: 2333
+[+] [15:38:55]
