@@ -1,0 +1,109 @@
+ 
+ 
+ logfile for Hash-Analyzer, v1.0
+ logfile, started at 2007-06-26 22:02:26 
+ 
+ 
+
+ 2007-06-26 22:02:26  showed log 
+
+ 2007-06-26 22:02:41  program start 
+
+ 3/3/2014 8:34:47 AM  program start 
+ 
+ 3/3/2014 8:34:52 AM 
+ Analyze: 2659488e48ecda980339c8017796607d
+ Following Hashes are possible true:
+ 1. DCC
+ 2. Haval128_3
+ 3. Haval128_4
+ 4. Haval128_5
+ 5. MD2
+ 6. MD4
+ 7. MD5
+ 8. NTLM
+ 9. LM
+ 10. RipeMD128(HAMAC)
+ 11. Snefru128(HAMMAC)
+ 12. Tiger128
+ Thank you
+
+ 05/14/2014 10:43:46 ?.?  program start 
+ 
+ 05/14/2014 10:43:51 ?.? 
+ Analyze: 1EEFECEB38BC58BB7EF99FD9107FBD4B
+ Following Hashes are possible true:
+ 1. Windows-LM
+ 2. Windows-NTLM
+ Thank you
+
+ 05/14/2014 10:45:10 ?.?  program start 
+ 
+ 05/14/2014 10:45:14 ?.? 
+ Analyze: b1725629de64ff9596f0ba199665bea2
+ Following Hashes are possible true:
+ 1. DCC
+ 2. Haval128_3
+ 3. Haval128_4
+ 4. Haval128_5
+ 5. MD2
+ 6. MD4
+ 7. MD5
+ 8. NTLM
+ 9. LM
+ 10. RipeMD128(HAMAC)
+ 11. Snefru128(HAMMAC)
+ 12. Tiger128
+ Thank you
+
+ 05/20/2014 03:30:38 ?.?  program start 
+ 
+ 05/20/2014 03:30:42 ?.? 
+ Analyze: bfd59291e825b5f2bbf1eb76569f8fe7
+ Following Hashes are possible true:
+ 1. DCC
+ 2. Haval128_3
+ 3. Haval128_4
+ 4. Haval128_5
+ 5. MD2
+ 6. MD4
+ 7. MD5
+ 8. NTLM
+ 9. LM
+ 10. RipeMD128(HAMAC)
+ 11. Snefru128(HAMMAC)
+ 12. Tiger128
+ Thank you
+
+ 07/03/2014 11:03:36 ?.?  program start 
+ 
+ 07/03/2014 11:03:41 ?.? 
+ Analyze: MjQyMTk3NzAA
+ This Hash seems to have a impossible lenght
+ Thank you
+
+ 07/03/2014 11:03:53 ?.?  asked for hash-info 
+ 
+ 07/03/2014 11:03:58 ?.? 
+ Analyze: MjQyMTk3NzAA
+ This Hash seems to have a impossible lenght
+ Thank you
+ 
+ 07/03/2014 11:04:00 ?.? 
+ Analyze: 
+ This Hash seems to be to small to be a real Hash
+ Thank you
+ 
+ 07/03/2014 11:04:03 ?.? 
+ Analyze: MjQyMTk3NzAA
+ This Hash seems to have a impossible lenght
+ Thank you
+
+ 07/03/2014 11:13:34 ?.?  program stop 
+
+ 07/03/2014 11:16:17 ?.?  program start 
+ 
+ 07/03/2014 11:16:20 ?.? 
+ Analyze: YUxhc2dhcgA=
+ This Hash seems to have a impossible lenght
+ Thank you

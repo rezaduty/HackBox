@@ -1,0 +1,118 @@
+
+ADLER32:	long: 8	only numbers and lowercase <g
+Blowfish		long: 60	only numbers, lowercase, Uppercase, /,.
+			starts with $2a$, sign 7 from left is $
+CRC-16:		long: 4	only numbers and lowercase <g
+CRC-16-CCITT:	long: 4	only numbers and lowercase <g
+CRC-32:		long: 8	only numbers and lowercase <g
+CRC-32B:	long: 8	only numbers and lowercase <g
+DES (Unix):	long: 13	lowecase, uppercase, numbers, / and .
+DCC		long: 32	only numbers and lowercase <g
+Elf-32:		long: 9	only numbers
+FCS-16:		long: 4	only numbers and lowercase <g
+GHash-32-3:	long: 8	only numbers and lowercase <g
+GHash-32-5:	long: 8	only numbers and lowercase <g
+GOST R34.11-94:	long: 64	only numbers and lowercase <g
+Haval128_3:	long: 32	only numbers and lowercase <g
+Haval128_4:	long: 32	only numbers and lowercase <g
+Haval128_5	long: 32	only numbers and lowercase <g
+Haval128 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+Haval128 (HMAC):	long: 32	only numbers and lowercase <g
+Haval160:	long: 40	only numbers and lowercase <g
+Haval160_3: 	long: 40	only numbers and lowercase <g
+Haval160_4: 	long: 40	only numbers and lowercase <g
+Haval160_5: 	long: 40	only numbers and lowercase <g
+Haval160 (Base64):	long: 28	only numbers, lowercase, Uppercase, + ,/,., ends on =
+Haval160 (HMAC):	long: 40	only numbers and lowercase <g
+Haval192:	long: 48	only numbers and lowercase <g
+Haval192 (Base64):	long: 32	only numbers, lowercase, Uppercase, + ,/,.
+Haval192_4:	long: 48	only numbers and lowercase <g
+Haval195_5:	long: 48	only numbers and lowercase <g
+Haval192 (HMAC):	long: 48	only numbers and lowercase <g
+Haval224:	long: 56	only numbers and lowercase <g
+Haval224 (Base64):	long: 40	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+Haval244_3:	long: 56	only numbers and lowercase <g
+Havan244_4:	long: 56	only numbers and lowercase <g
+Haval256_5:	long: 64	only numbers and lowercase <g
+Haval224 (HMAC):	long: 56	only numbers and lowercase <g
+Haval256:	long: 64	only numbers and lowercase <g
+Haval256 (Base64):	long: 44	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+Haval256_3:	long: 64	only numbers and lowercase <g
+Haval256_4:	long: 64	only numbers and lowercase <g
+Haval256 (HMAC):	long: 64	only numbers and lowercase <g
+Haval256_3:	long: 64	only numbers and lowercase <g
+MD2:		long: 32	only numbers and lowercase <g
+MD2 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+MD2 (HMAC):	long: 32	only numbers and lowercase <g
+MD4:		long: 32	only numbers and lowercase <g
+MD4 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+MD4 (HMAC):	long: 32	only numbers and lowercase <g
+MD5:		long: 32	only numbers and lowercase <g
+MD5 (HMAC):	long: 32	only numbers and lowercase <g
+MD5 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+MD5 (APR):	long: 37	$apr1$ZSc84vgF$YiKqBzqnUskAPKeDWlN8/0
+			starts with $apr1$, sign 15 from left is $
+			numbers, lowercase, Uppercase, . and /
+
+MD5 (Unix):	long: 34	$1$P2lE.rGp$SYCpUzBZjWRGKyMe/MbU00
+			starts with $1$, sign 12 from left is $
+
+MySQL:		long: 16	only numbers and lowercase <g
+MySQL v5.x:	long: 40	only numbers and lowercase <g
+NTLM:		long: 32	only numbers and lowercase <g
+PANAMA		long: 64	only numbers and lowercase <g
+RipeMD128:	long: 32	only numbers and lowercase <g
+RipeMD128 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+RipeMD128 (HMAC):	long: 32		only numbers and lowercase <g
+RipeMD160:		long: 40	only numbers and lowercase <g
+RipeMD160 (Base64):	long: 28	only numbers, lowercase, Uppercase, + ,/,., ends on =
+RipeMD160 (HMAC):	long: 40		only numbers and lowercase <g
+RipeMD256:		long: 64	only numbers and lowercase <g
+RipeMD256 (Base64):	long: 44	only numbers, lowercase, Uppercase, + ,/,., ends on =
+RipeMD256 (HMAC):	long: 64		only numbers and lowercase <g
+RipeMD320:		long: 80	only numbers and lowercase <g
+RipeMD320 (Base64):	long: 56	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+RipeMD320 (HMAC):	long: 80	only numbers and lowercase <g
+SHA-0:		long: 40 	only numbers and lowercase <g
+SHA-1:		long: 40	only numbers and lowercase <g
+SHA-1 (Base64):	long: 28	only numbers, lowercase, Uppercase, + ,/,., ends on =
+SHA-1 (HMAC):	long: 40	only numbers and lowercase <g
+SHA224:		long: 56	only numbers and lowercase <g
+SHA224 (Base64):	long: 40	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+SHA224 (HMAC):	long: 56	only numbers and lowercase <g
+SHA256:		long: 64	only numbers and lowercase <g
+SHA256 (Base64):	long: 44	only numbers, lowercase, Uppercase, + ,/,., ends on =
+SHA256 (HMAC):	long: 64	only numbers and lowercase <g
+SHA384:		long: 96	only numbers and lowercase <g
+SHA384 (Base64):	long: 64	only numbers, lowercase, Uppercase, + ,/,.
+SHA384 (HMAC):	long: 96	only numbers and lowercase <g
+SHA512:		long: 128	only numbers and lowercase <g
+SHA512 (Base64):	long: 88	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+SHA512 (HMAC):	long: 128	only numbers and lowercase <g
+SNEFRU128:	long: 32	only numbers and lowercase <g
+SNEFRU128 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+SNEFRU128 (HMAC):	long: 32	only numbers and lowercase <g
+SNEFRU256:		long: 64	only numbers and lowercase <g
+SNEFRU256 (Base64):	long: 44	only numbers, lowercase, Uppercase, + ,/,., ends on =
+SNEFRU256 (HMAC):	long: 64	only numbers and lowercase <g
+Tiger2: 		long: 48	only numbers and lowercase <g
+Tiger128:		long: 32	only numbers and lowercase <g
+Tiger128 (Base64):	long: 24	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+Tiger128 (HMAC):	long: 32	only numbers and lowercase <g
+Tiger160:		long: 40	only numbers and lowercase <g
+Tiger160 (Base64):	long: 28	only numbers, lowercase, Uppercase, + ,/,., ends on =
+Tiger160 (HMAC):	long: 40	only numbers and lowercase <g
+Tiger192:		long: 48	only numbers and lowercase <g
+Tiger192 (Base64):	long: 32	only numbers, lowercase, Uppercase
+Tiger192 (HMAC):	long: 48	only numbers and lowercase <g
+WHIRLPOOL:	long: 128	only numbers and lowercase <g
+WHIRLPOOL (Base64):	long: 88	only numbers, lowercase, Uppercase, + ,/,., ends on ==
+WHIRLPOOL (HMAC):	long: 128	only numbers and lowercase <g
+Whirlpool-0:	long: 128	only numbers and lowercase <g
+Whirlpool-1:	long: 128	only numbers and lowercase <g
+Whirlpool-2:	long: 128	only numbers and lowercase <g
+md5(md5($pass)):	long: 32	only numbers and lowercase <g
+md5(md5($pass).$salt):	long: 32	only numbers and lowercase <g
+md5(md5($salt).md5($pass)):	long: 32	only numbers and lowercase <g
+Windows-LM:	long: 32	only numbers and Uppercase <G
+Windows-NTLM:	long: 32	only numbers and Uppercase <G
